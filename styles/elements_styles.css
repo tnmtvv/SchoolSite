@@ -1,0 +1,21 @@
+.basic_button {
+    background-color: rgb(225, 47, 47);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 450;
+    transition: 0.6;
+    cursor: pointer;
+}
+
+.basic_button:hover {
+    background-color: rgb(200, 47, 47);
+}
+
+.basic_button:active {
+    background-color: rgb(175, 43, 43);
+}
