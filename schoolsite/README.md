@@ -1,5 +1,6 @@
 #
 npm i @mantine/core@6.0.21 react@18.2.0 react-dom@18.2.0 react-redux@8.1.3 react-router-dom@6.16.0 redux@4.2.1 redux-thunk@2.4.2
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

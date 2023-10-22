@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.logo {
+    width: 6%;
+}
+
+.tabs{
+    margin: auto;
+    margin-left: 0;  
+    margin-right: 0; 
+}
