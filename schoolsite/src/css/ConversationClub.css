@@ -1,0 +1,54 @@
+.about-conversation-club{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.description {
+    margin: 100px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description>h1.mantine-Text-root:nth-child(1){
+    margin-bottom: 50px;
+}
+
+.description>.mantine-Text-root{
+    margin-top: 20px;
+}
+
+.mantine-scik0b {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.info {
+    background-color: rgb(218, 218, 218);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-info {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-info>div.mantine-Text-root{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cost {
+    margin-top: 100px;
+}
+

@@ -1,0 +1,23 @@
+.cover{
+    display: flex;
+    justify-content: space-around;
+}
+.cover-form {
+    display: flex;
+    justify-content: end;
+    padding-top: 200px;
+}
+.title {
+    display: flex;
+    align-items: end;
+}
+.text{
+    display: flex;
+    
+}
+
+.text>h1.mantine-Text-root {
+    padding-left: 15px;
+    font-size: 5rem;
+    padding-top: 5px;
+}
