@@ -32,23 +32,23 @@ const Menu = () => {
   return (
     <div className='header'>
       <div className='logo'>
-      <Image 
-        radius="md"
-        src={logo}
-      />
+        <Image
+          radius="md"
+          src={logo}
+        />
       </div>
       <Container className='tabs'>
-      <Tabs color="red" value={tabValue} onTabChange={(value) => navigateTo(`/${value}`)}>
-        <Tabs.List>
-          <Tabs.Tab className={classes.mainLink} value="Home">Главная</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="Children">Детям</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="Adults">Взрослым</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="Languages">Языки</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="ConversationClub">Разговорный клуб</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="Exams">Экзамены</Tabs.Tab>
-          <Tabs.Tab className={classes.mainLink} value="Teachers">Педагоги</Tabs.Tab>
-        </Tabs.List>
-      </Tabs>
+        <Tabs color="red" value={tabValue} onTabChange={(value) => navigateTo(`/${value}`)}>
+          <Tabs.List>
+            <Tabs.Tab className={classes.mainLink} value="Home">Главная</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="Children">Детям</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="Adults">Взрослым</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="Languages">Языки</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="ConversationClub">Разговорный клуб</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="Exams">Экзамены</Tabs.Tab>
+            <Tabs.Tab className={classes.mainLink} value="Teachers">Педагоги</Tabs.Tab>
+          </Tabs.List>
+        </Tabs>
       </Container>
 
     </div>
