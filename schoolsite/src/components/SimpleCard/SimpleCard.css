@@ -1,0 +1,43 @@
+.simple-card {
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+}
+
+.card-header {
+    margin-top: 38px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.main-text {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 110%;
+    color: rgb(87, 87, 87);
+}
+
+.block-menu-button {
+    margin-top: 10px;
+    justify-content: left;
+}
+
+.menu-button {
+    background: rgb(211, 28, 28);
+    color: white;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.menu-button:hover {
+    background: rgb(126, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.menu-button:not(:hover) {
+    background: rgb(211, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}

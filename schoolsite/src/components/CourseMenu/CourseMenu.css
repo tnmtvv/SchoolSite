@@ -1,0 +1,40 @@
+.simple-card {
+    height: 350px;
+    width: 350px;
+    justify-content: center;
+}
+
+.card-image {
+    height: 100px;
+    width: 100px;
+}
+
+.card-header {
+    margin-top: 38px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.menu-layout {
+    display: flex;
+    margin-top: 106px;
+    margin-bottom: 106px;
+    margin-left: 157px;
+    margin-right: 157px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.main-text {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 110%;
+    color: rgb(87, 87, 87);
+}
+
+.menu-button {
+    margin-top: 30px;
+    justify-content: left;
+}
