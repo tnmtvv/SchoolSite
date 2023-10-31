@@ -1,6 +1,5 @@
 import React from 'react';
 import "./CourseMenu.css"
-import { Image, Button, Group } from '@mantine/core';
 import img from '../../images/english-speaking-club.jpg'
 import SimpleCard from '../SimpleCard/SimpleCard';
 

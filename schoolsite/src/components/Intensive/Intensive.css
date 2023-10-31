@@ -1,0 +1,57 @@
+.main-block {
+    background-color: rgb(169, 162, 162);
+    /* justify-content: space-around; */
+    flex-direction: row;
+}
+
+.img {
+    width: 200px;
+    height: 300px;
+}
+
+.text-image {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-block {
+
+    flex-direction: row;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.main-text {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 110%;
+    color: rgb(87, 87, 87);
+}
+
+.block-simple-button {
+    margin-top: 10px;
+    justify-content: left;
+}
+
+.simple-button {
+    background: rgb(211, 28, 28);
+    color: white;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.simple-button:hover {
+    background: rgb(126, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.simple-button:not(:hover) {
+    background: rgb(211, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}
