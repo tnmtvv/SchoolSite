@@ -1,21 +1,35 @@
 .main-block {
-    background-color: rgb(169, 162, 162);
-    /* justify-content: space-around; */
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 613px;
+    background-color: rgb(232, 223, 223);
 }
 
 .img {
-    width: 200px;
-    height: 300px;
+    width: 40%;
+    height: 40%;
 }
 
 .text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all-content {
+    margin-top: 106px;
+    margin-bottom: 106px;
+    margin-left: 106px;
+    margin-right: 106px;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .text-block {
-
+    width: 40%;
+    /* height: 100%; */
     flex-direction: row;
 }
 
@@ -29,13 +43,8 @@
 .main-text {
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 110%;
+    font-size: 120%;
     color: rgb(87, 87, 87);
-}
-
-.block-simple-button {
-    margin-top: 10px;
-    justify-content: left;
 }
 
 .simple-button {
