@@ -10,11 +10,9 @@ const SimpleCard = (props) => {
 
     return (
         <div className='simple-card'>
-            <Image src={img} alt='...' position='top' fill sizes="100vw, 100px" priority />
-            <div className='text-block'>
-                <h1 className="card-header">{title}</h1>
-                <h1 className="main-text"> {mainText} </h1>
-            </div>
+            <Image src={img} alt='...' position='top' fill priority />
+            <h1 className="card-header">{title}</h1>
+            <h1 className="main-text"> {mainText} </h1>
             <Group className='block-menu-button' mt="md">
                 <Button className='menu-button' variant="filled">{buttonText}</Button>
             </Group>
