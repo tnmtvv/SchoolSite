@@ -1,9 +1,15 @@
 import React from "react";
+import TeacherInfo from "../components/TeacherInfo/TeacherInfo";
+import { teachers } from '../data/techers'
 
 const Teachers = () => {
-    return(
+    return (
         <div>
-            Teachers
+            {teachers.map(teacher =>
+                <TeacherInfo teacher={teacher} />
+            )
+            }
+
         </div>
     )
 }
