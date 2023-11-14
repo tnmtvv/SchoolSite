@@ -1,0 +1,32 @@
+.simple-adv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adv-header {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 110%;
+    margin-bottom: 1%;
+}
+
+.main-text {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 100%;
+    color: rgb(87, 87, 87);
+}
+
+.img {
+    height: 45px;
+    width: 45px;
+    margin-right: 2%;
+}
