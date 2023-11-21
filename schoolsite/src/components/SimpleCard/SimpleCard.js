@@ -7,14 +7,16 @@ const SimpleCard = (props) => {
     const mainText = props.mainText
     const img = props.image
     const buttonText = props.buttonText
+    const fullWidth = props.fullWidth
 
     return (
         <div className='simple-card'>
-            <Image src={img} alt='...' position='top' fill priority />
+            <Image alt='...' position='top' src={img}
+      />
             <h1 className="card-header">{title}</h1>
             <h1 className="main-text"> {mainText} </h1>
             <Group className='block-menu-button' mt="md">
-                <Button className='menu-button' variant="filled">{buttonText}</Button>
+                <Button className='menu-button' variant="filled" fullWidth={fullWidth}>{buttonText}</Button>
             </Group>
         </div>
     )
