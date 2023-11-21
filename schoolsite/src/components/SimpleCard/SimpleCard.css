@@ -1,5 +1,5 @@
 .simple-card {
-    width: 30%;
+    max-width: 500px;
     justify-content: center;
 }
 
