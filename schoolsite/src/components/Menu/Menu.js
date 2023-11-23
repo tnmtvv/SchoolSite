@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom'
 import { Container, Tabs, createStyles, rem, Image, Anchor } from '@mantine/core';
+import { IconBrandTelegram, IconBrandVk, IconBrandWhatsapp } from '@tabler/icons-react';
+import { Link } from 'react-router-dom'
 
 import '../../css/App.css';
 import logo from '../../images/SmartSchool_logo_TrBg.png';
@@ -37,6 +39,7 @@ const Menu = () => {
           src={logo}
         />
       </div>
+      <div className='menu-buttons'>
       <Container className='tabs'>
         <Tabs color="red" value={tabValue} onTabChange={(value) => navigateTo(`/${value}`)}>
           <Tabs.List>
@@ -50,7 +53,22 @@ const Menu = () => {
           </Tabs.List>
         </Tabs>
       </Container>
-
+      <div className='links'>
+        <Link to='#'>
+        <IconBrandWhatsapp className='link' 
+        style={{ width: rem(30), height: rem(30) }}
+        />
+        </Link>
+        <Link to="https://vk.com/mysmart_school">
+        <IconBrandVk className='link' 
+        style={{ width: rem(30), height: rem(30) }}
+        />
+        </Link>
+        <Link to="#">
+        <IconBrandTelegram className='link' style={{ width: rem(30), height: rem(30) }}/>
+        </Link>
+      </div>
+      </div>
     </div>
   )
 };
