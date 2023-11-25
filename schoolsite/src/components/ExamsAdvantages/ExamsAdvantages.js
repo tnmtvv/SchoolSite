@@ -8,7 +8,7 @@ const ExamAdvantage = (props) => {
     const img = props.image
     return (
         < div className="main-exam-block">
-            <div className="header">
+            <div className="header_adv">
                 Эффективная подготовка с My Smart
             </div>
             <SimpleAdvantage title={'Бесплатное тестирование'} mainText={'Помогаем определить текущий уровень владения языком т составляем индивидуальный план занятий'} image={img} />

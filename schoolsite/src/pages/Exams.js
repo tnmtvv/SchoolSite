@@ -3,8 +3,12 @@ import ExamAdvantage from "../components/ExamsAdvantages/ExamsAdvantages";
 import PriceTable from "../components/PriceTable/PriceTable";
 import img from '../images/check-mark-svgrepo-com.svg'
 import img2 from '../images/preparation.png'
+import img_table from '../images/CEFR.jpg'
 import { Table, Title, Text } from "@mantine/core";
 import Cover from "../components/Cover/Cover";
+import TextWithShade from "../components/TextWithShade/TextWithShade";
+import ImgWithShade from "../components/ImgWithShade/ImgWithShade";
+import ButtonOnTheLeft from "../components/ButtonTheLeft/ButtonOnTheLeft";
 
 const Exams = () => {
     const title = <Title color="white">Подготовка<br />к экзаменам</Title>
@@ -23,7 +27,15 @@ const Exams = () => {
                 <Cover title={title} img={img2} />
             </div>
             <ExamAdvantage image={img} />
-            <PriceTable data={prices} />
+            <TextWithShade />
+            <ImgWithShade image={img_table} />
+            <ButtonOnTheLeft buttonText={'Оставить заявку'} />
+            <div className="header_adv">
+                Стоимость курсов
+            </div>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <PriceTable data={prices} />
+            </div>
         </div>
     )
 }
