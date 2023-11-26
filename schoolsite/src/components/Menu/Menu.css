@@ -13,3 +13,18 @@
     margin-left: 0;  
     margin-right: 0; 
 }
+
+
+.links{
+    margin: auto;
+    margin-left: 0;  
+    margin-right: 0; 
+}
+
+.link{
+    padding-left: 10px;
+}
+
+.menu-buttons{
+    display: flex
+}
