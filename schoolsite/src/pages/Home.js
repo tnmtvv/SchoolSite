@@ -2,6 +2,10 @@ import React from "react";
 import { useState } from "react";
 import { Image } from '@mantine/core';
 import PriceTable from "../components/PriceTable/PriceTable"
+import WelcomeBlock from "../components/WelcomeBlock/WelcomeBlock";
+import MainBlock from "../components/MainBlock/MainBlock";
+import AboutCompanyBlock from "../components/AboutCompanyBlock/AboutCompanyBlock";
+import MainCarousel from "../components/MainCarousel/MainCarousel";
 
 const Home = () => {
     const prices = [
@@ -13,6 +17,11 @@ const Home = () => {
     ];
 
     return (
+        <div>
+            <MainBlock/>
+            <WelcomeBlock/>
+            <AboutCompanyBlock/>
+            <MainCarousel />
         <div style={{ display: "flex", justifyContent: "center" }}>
 
             {/* <Image
@@ -21,6 +30,7 @@ const Home = () => {
             /> */}
             <PriceTable data={prices}></PriceTable>
 
+        </div>
         </div>
     )
 }
