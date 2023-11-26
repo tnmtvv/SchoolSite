@@ -1,0 +1,24 @@
+.main-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image{
+    width: 30%;
+}
+
+.main-title{
+    display: flex;
+    text-align: center;
+}
+
+.title-with-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,13 @@
+.about{
+    background-color: rgb(226, 226, 226);
+    padding: 100px;
+}
+
+.about-title{
+    display: inline;
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.about-text{
+    margin-top: 50px;
+}
