@@ -6,6 +6,9 @@ import WelcomeBlock from "../components/WelcomeBlock/WelcomeBlock";
 import MainBlock from "../components/MainBlock/MainBlock";
 import AboutCompanyBlock from "../components/AboutCompanyBlock/AboutCompanyBlock";
 import MainCarousel from "../components/MainCarousel/MainCarousel";
+import StudentReviews from "../components/StudentReviews/StudentReviews";
+import FormForMainPage from "../components/FormForMainPage/FormForMainPage";
+import Resources from "../components/Resources/Resources";
 
 const Home = () => {
     const prices = [
@@ -22,6 +25,10 @@ const Home = () => {
             <WelcomeBlock/>
             <AboutCompanyBlock/>
             <MainCarousel />
+            <Resources/>
+            <StudentReviews/>
+            <FormForMainPage/>
+
         <div style={{ display: "flex", justifyContent: "center" }}>
 
             {/* <Image
