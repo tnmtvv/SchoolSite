@@ -1,0 +1,17 @@
+.carousel-block{
+    display: flex;
+    justify-content: center;
+}
+
+.reviews {
+    width: 60%;
+    text-align: center;
+}
+
+.reviews-title {
+    margin-bottom: 100px;
+}
+
+
+
+

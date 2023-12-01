@@ -9,8 +9,7 @@ import MainCarousel from "../components/MainCarousel/MainCarousel";
 import StudentReviews from "../components/StudentReviews/StudentReviews";
 import FormForMainPage from "../components/FormForMainPage/FormForMainPage";
 import Resources from "../components/Resources/Resources";
-import CourseGrid from "../components/CoursesGrid/CoursesGrid";
-import SimpleImgLink from "../components/SimpleImgLink/SimpleImgLink";
+
 
 const Home = () => {
     const prices = [
@@ -34,8 +33,7 @@ const Home = () => {
             </div>
             <StudentReviews />
             <FormForMainPage />
-
-
+        </div>
         </div>
     )
 }

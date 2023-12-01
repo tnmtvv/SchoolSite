@@ -13,3 +13,8 @@
     margin-bottom: 5%;
     margin-top: 5%;
 }
+
+.advantages{
+    display: flex;
+    flex-direction: column;
+}

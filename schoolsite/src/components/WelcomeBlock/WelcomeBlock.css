@@ -1,0 +1,13 @@
+.welcome-block{
+    text-align: center;
+}
+
+.welcome-text{
+    display: inline-block;
+    padding-top: 15%;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+
+

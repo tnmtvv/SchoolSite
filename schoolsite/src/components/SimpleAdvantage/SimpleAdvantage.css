@@ -5,28 +5,28 @@
     margin-bottom: 3%;
 }
 
-.text-block {
+.simple-text-block {
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 1;
 }
 
-.adv-header {
+.simple-adv-header {
     font-weight: 600;
     font-family: sans-serif;
     font-size: 120%;
     margin-bottom: 1%;
 }
 
-.main-text {
+.simple-main-text {
     font-family: sans-serif;
     font-weight: lighter;
     font-size: 110%;
     color: rgb(87, 87, 87);
 }
 
-.img {
+.simple-img {
     height: 45px;
     width: 45px;
     margin-right: 2%;
