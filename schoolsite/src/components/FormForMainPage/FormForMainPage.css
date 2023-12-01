@@ -1,0 +1,6 @@
+.main-form {
+    padding: 50px;
+    padding-left: 400px;
+    display: flex;
+    flex-direction: column;
+}
