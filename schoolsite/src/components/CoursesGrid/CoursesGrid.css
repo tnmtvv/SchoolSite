@@ -1,0 +1,27 @@
+.main-grid {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 0 15% 0;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+
+.one-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 0;
+}
+
+.one-row .menu-image:hover {
+    -webkit-transition: 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: 1s ease;
+    /* Firefox 4 */
+    -o-transition: 1s ease;
+    /* Opera */
+    cursor: pointer;
+    filter: brightness(120%);
+}

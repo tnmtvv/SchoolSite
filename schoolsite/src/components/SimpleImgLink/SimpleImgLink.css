@@ -1,0 +1,71 @@
+.menu-image {
+    filter: brightness(80%);
+    min-width: 0;
+    min-height: 0;
+
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    -webkit-transition: 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: 1s ease;
+    /* Firefox 4 */
+    -o-transition: 1s ease;
+
+}
+
+.background-image {
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+}
+
+.simple-img-link {
+
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+    /* z-index: -6; */
+    min-width: 0;
+    min-height: 0;
+    padding: 13px 20px;
+
+    box-sizing: border-box;
+    height: fit-content;
+    block-size: fit-content;
+}
+
+a {
+    color: #ffffff00;
+}
+
+.text-over-image {
+    -webkit-transition: 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: 1s ease;
+    /* Firefox 4 */
+    -o-transition: 1s ease;
+
+
+    position: relative;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 140%;
+    /* line-height: normal; */
+    /* width: 50%; */
+    color: rgb(255, 255, 255);
+    bottom: 84px;
+    left: 4%;
+    right: 2%;
+}
+
+.background-image:hover .text-over-image {
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    /* Firefox 4 */
+    -o-transition: 1s ease;
+
+    /* position: relative; */
+    bottom: 150px;
+}
