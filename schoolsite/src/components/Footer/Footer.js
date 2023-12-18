@@ -1,6 +1,10 @@
 import React from "react";
 import { Text, Container, ActionIcon, Group, rem, Image, Title } from '@mantine/core';
 import img from '../../images/map.png'
+import google from '../../images/Google.png'
+import yandex from '../../images/Yandex.png'
+import googleImg from '../../images/Google_logo_2015.png'
+import yandexImg from '../../images/yandex-logo.png'
 import './Footer.css'
 
 
@@ -40,8 +44,29 @@ const FooterLinks = () => {
 
   return (
     <footer className="footer">
+      <div className="footer-left">
+
         <div className="groups">{links}</div>
         <div className="address">{address}</div>
+        <div className="map-reviews">
+          <div className="google-logo">
+        <Image 
+          src={googleImg} />
+          </div>
+          <div className="google">
+        <Image 
+          src={google} />
+          </div>
+          <div className="yandex-logo">
+          <Image 
+          src={yandexImg} />
+          </div>
+          <div className="yandex">
+        <Image 
+          src={yandex} />  
+          </div>
+        </div>
+      </div>
         <div className="map">
           <Image 
           src={img} />
