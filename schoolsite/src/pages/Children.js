@@ -27,7 +27,9 @@ const Children = () => {
             <div>
                 <Intensive></Intensive>
             </div>
-            <Text>Стоимость курсов</Text>
+            <div className="header_adv">
+                Стоимость курсов
+            </div>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <PriceTable data={prices}></PriceTable>
             </div>

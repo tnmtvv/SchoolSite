@@ -1,9 +1,7 @@
 .menu-layout {
     display: flex;
-    margin-top: 106px;
-    margin-bottom: 106px;
-    margin-left: 157px;
-    margin-right: 157px;
+    margin: 10% 10% 3%;
+    max-height: max-content;
     justify-content: space-around;
     flex-direction: row;
 }

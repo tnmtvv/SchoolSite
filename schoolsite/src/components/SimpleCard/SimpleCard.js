@@ -8,11 +8,13 @@ const SimpleCard = (props) => {
     const img = props.image
     const buttonText = props.buttonText
     const fullWidth = props.fullWidth
+    const simpleCardStyle = props.simpleCardStyle
+
 
     return (
-        <div className='simple-card'>
-            <Image alt='...' position='top' src={img}
-      />
+        <div style={simpleCardStyle}>
+            <div className="kinda-image"> </div>
+            <Image alt='...' position='top' src={img} cover />
             <h1 className="card-header">{title}</h1>
             <h1 className="main-text"> {mainText} </h1>
             <Group className='block-menu-button' mt="md">

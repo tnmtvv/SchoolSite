@@ -21,9 +21,7 @@ const SimpleImgLink = (props) => {
                 </div>
 
             </Link>
-
         </div>
-
     );
 }
 

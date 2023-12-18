@@ -8,47 +8,65 @@ import map from "../../images/map-pin.png"
 import school from "../../images/school.png"
 import "./Resources.css"
 const Resources = () => {
+    const mainTextStyle = {
+        maxWidth: "90%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        lineHeight: "1"
+    }
     return (
-        <div className="resources">
-            <div className="column">
-                <div className="point">
-                    <SimpleAdvavntage title="Преподаватели"
-                        mainText="Коллектив русских и иностранных преподавателей сделают для вас процесс изучения любого иностранного языка лёгким, удобным и доступным на любом уровне знаний"
-                        image={star}
-                    />
-                </div>
-                <div className="point">
-                <SimpleAdvavntage title="Поддержка"
-                    mainText="Если у вас возникают вопросы, обратитесь к вашим менеджерам удобным для вас способом, они ответят на все вопросы"
-                    image={message}
-                />
-                </div>
-                <div className="point">
-                <SimpleAdvavntage title="Гибкость"
-                    mainText="Мы можем предоставить вам любой формат обучения в любое удобное для вас время"
-                    image={users}
-                />
-                </div>
+        <div className="aggregate_block">
+            <div className="header_adv">
+                Почему My Smart
             </div>
-            <div className="column">
-            <div className="point">
-                <SimpleAdvavntage title="Опыт"
-                    mainText="В течение более чем 25 лет академияуспешно обучает иностранным языкам студентов и корпорации"
-                    image={clock}
-                    />
+            <div className="resources">
+                <div className="column">
+                    <div className="point">
+                        <SimpleAdvavntage title="Преподаватели"
+                            mainText="Процесс изучения любого иностранного языка лёгкий, удобный и доступный на любом уровне знаний"
+                            image={star}
+                            textStyle={mainTextStyle}
+                        />
                     </div>
                     <div className="point">
-                <SimpleAdvavntage title="Местоположение"
-                    mainText="Мы находимся рядом с вашим домом"
-                    image={map}
-                /></div>
-                <div className="point">
-
-                <SimpleAdvavntage title="Методика"
-                    mainText="Если у вас возникают вопросы, обратитесь к вашим менеджерам удобным для вас способом, они ответят на все вопросы"
-                    image={school}
-                    />
+                        <SimpleAdvavntage title="Поддержка"
+                            mainText="Если у вас возникают вопросы, обратитесь к вашим менеджерам удобным для вас способом, они ответят на все вопросы"
+                            image={message}
+                            textStyle={mainTextStyle}
+                        />
                     </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Гибкость"
+                            mainText="Мы можем предоставить вам любой формат обучения в любое удобное для вас время"
+                            image={users}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                </div>
+                <div className="column">
+                    <div className="point">
+                        <SimpleAdvavntage title="Опыт"
+                            mainText="В течение более чем 25 лет академияуспешно обучает иностранным языкам студентов и корпорации"
+                            image={clock}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Местоположение"
+                            mainText="Мы находимся рядом с вашим домом"
+                            image={map}
+                            textStyle={mainTextStyle}
+                        /></div>
+                    <div className="point">
+
+                        <SimpleAdvavntage title="Методика"
+                            mainText="Если у вас возникают вопросы, обратитесь к вашим менеджерам удобным для вас способом, они ответят на все вопросы"
+                            image={school}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
 

@@ -8,22 +8,30 @@ const MainBlock = () => {
             <div className="inner">
                 <div className="main-content">
                     <div className="image">
-                <Image src={img} alt='...' position='top'/>
+                        <Image src={img} alt='...' position='top' />
                     </div>
 
                     <div className="title-with-buttons">
-                    <Title className="main-title" size={50}>
-                        Английский, китайский и<br/> испанский для взрослых<br/> и детей!
-                    </Title>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <Title className="main-title" size={50}>
+                                Английский, китайский и<br /> испанский для взрослых<br /> и детей!
+                            </Title>
+                        </div>
 
-                    <div className="buttons">
-                        <Button radius="md" size="xl" className='menu-button' variant="filled">
-                            ЗАПИСАТЬСЯ
-                        </Button>
-                        <Button radius="md" size="xl" className='menu-button' variant="filled">
-                            ПОДРОБНЕЕ
-                        </Button>
-                    </div>
+                        <div className="buttons">
+                            <div className="buttons_container">
+                                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                                    <Button radius="md" size="xl" className='menu-button' variant="filled">
+                                        ЗАПИСАТЬСЯ
+                                    </Button>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                                    <Button radius="md" size="xl" className='menu-button' variant="filled">
+                                        ПОДРОБНЕЕ
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -31,4 +39,4 @@ const MainBlock = () => {
     );
 }
 
-export default MainBlock 
+export default MainBlock;

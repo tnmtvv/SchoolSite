@@ -1,24 +1,30 @@
-.main-content{
+.main-content {
     display: flex;
     justify-content: space-around;
 }
 
-.image{
+.buttons_container {
+    display: flex;
+    justify-content: space-around;
+    width: 75%
+}
+
+.image {
     width: 30%;
 }
 
-.main-title{
+.main-title {
     display: flex;
     text-align: center;
 }
 
-.title-with-buttons{
+.title-with-buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }

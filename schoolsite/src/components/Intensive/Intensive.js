@@ -10,9 +10,11 @@ const Intensive = () => {
             <div className='all-content'>
                 <div className="text-image">
                     <div className="text-block">
+
                         <div className="title">
                             Интенсивы английского языка для детей и подростков во время каникул
                         </div>
+
                         <div className="main-text">
                             <Text>
                                 <b>Интенсив</b> – это отличная возможность для тех,
@@ -30,6 +32,7 @@ const Intensive = () => {
                     <div className='img'>
                         <Image src={img} alt='...' priority />
                     </div>
+
                 </div>
                 <Group className='block-simple-button' mt="md">
                     <Button className='simple-button' variant="filled">Подробнее</Button>

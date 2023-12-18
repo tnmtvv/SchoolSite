@@ -1,6 +1,5 @@
 .resources {
-    background-color: rgb(226, 226, 226);
-    padding: 100px;
+    padding: 0px 100px 100px 100px;
     border-bottom: 2px solid rgb(200, 199, 199);
     display: flex;
     justify-content: center;
@@ -12,7 +11,7 @@
     width: 45%;
 }
 
-div.column > div {
+div.column>div {
     justify-content: flex-start;
 }
 
@@ -21,10 +20,16 @@ div.column > div {
     height: 100px;
 }
 
-div.column:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+div.column:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1) {
     width: 60px;
 }
 
-div.column:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+div.column:nth-child(2)>div:nth-child(3)>div:nth-child(1)>div:nth-child(1) {
     width: 60px;
+}
+
+.aggregate_block {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
 }

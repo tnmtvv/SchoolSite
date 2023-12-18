@@ -17,10 +17,13 @@ const ConversationClub = () => {
 
             <div className="about-conversation-club">
                 <div className="description">
-                            <Title className="title" size={50}>Что такое разговорный клуб?</Title>
-                            <Divider />
-                            <Text size={25}className="text">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
-                       
+                    <div data-aos="fade-up" data-aos-duration="800">
+                        <Title className="title" size={50}>Что такое разговорный клуб?</Title>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><Divider /></div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <Text size={25} className="text">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
+                    </div>
                 </div>
                 <Container my="md">
                     <Grid cols={{ base: 1, sm: 2 }} spacing="lg">
@@ -38,20 +41,20 @@ const ConversationClub = () => {
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
                                     src={kv}
-                                    />
+                                />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
                                     src={kv}
-                                    />
+                                />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}/>
+                                    src={kv} />
                             </Grid.Col>
                         </Grid>
                     </Grid>
@@ -62,13 +65,16 @@ const ConversationClub = () => {
 
             <div className="info">
                 <div className="text-info">
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <Title size={50}>Расписание и стоимость</Title>
+                    </div>
 
-                <Title size={50}>Расписание и стоимость</Title>
-                <Text size={25} className="cost"> 
-                1 занятие - 1200 руб<br/>
-                Абонемент на 4 занятия - 4000 руб<br/>
-                Длительность абонемента - 2 месяца
-                </Text>
+                    <Text size={25} className="cost">
+                        1 занятие - 1200 руб<br />
+                        Абонемент на 4 занятия - 4000 руб<br />
+                        Длительность абонемента - 2 месяца
+                    </Text>
+
                 </div>
 
             </div>

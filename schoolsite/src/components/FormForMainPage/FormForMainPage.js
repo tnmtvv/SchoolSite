@@ -8,10 +8,15 @@ const FormForMainPage = () => {
     return (
         <BackgroundImage src={img}>
             <div className="main-form">
-                <Text style={{ marginBottom: "10px" }} size={25} color="white">
-                    Консультация или тестирование
-                </Text>
-                <Form />
+                <div data-aos="fade-right" data-aos-duration="1000" >
+                    <Text style={{ marginBottom: "10px" }} size={25} color="white">
+                        Консультация или тестирование
+
+                    </Text>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    <Form />
+                </div>
             </div>
         </BackgroundImage>
     )

@@ -5,9 +5,11 @@ import { Text, Box, BackgroundImage } from "@mantine/core";
 const WelcomeBlock = () => {
     return (
         <div className="welcome-block">
-            <BackgroundImage src={img}>
+            <BackgroundImage src={img} min-height="41.25rem">
                 <Box mih={804} >
-                    <Text className='welcome-text' color="white" size={90} fw={700}>Welcome To Smart School</Text>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+                        <Text className='welcome-text' color="white" size={90} fw={700}>Welcome To Smart School</Text>
+                    </div>
                 </Box>
             </BackgroundImage>
         </div>
