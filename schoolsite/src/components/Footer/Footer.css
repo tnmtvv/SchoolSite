@@ -1,20 +1,31 @@
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.footer-left{
+    display: flex;
 }
 
 .groups {
+    margin-top: 50px;
     display: inline-block;
-    padding-top: 30px;
 }
 
 .address {
+    margin-top: 50px;
     display: inline-block;
     padding-top: 30px;
+    margin-left: 50px;
 }
 
 .map {
     display: inline-block;
     width: 20%;
+}
+.map-reviews{
+    margin-top: 50px;
+    width: 20%;
+    margin-left: 50px;
 }
 
