@@ -12,15 +12,16 @@ const Resources = () => {
         maxWidth: "90%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        // justifyContent: "center",
+        // paddingBottom: "10px",
         lineHeight: "1"
     }
     return (
         <div className="aggregate_block">
-            <div className="header_adv">
+            <div className="header-grid">
                 Почему My Smart
             </div>
-            <div className="resources">
+            <div className="resources-desktop">
                 <div className="column">
                     <div className="point">
                         <SimpleAdvavntage title="Преподаватели"
@@ -62,6 +63,53 @@ const Resources = () => {
 
                         <SimpleAdvavntage title="Методика"
                             mainText="Если у вас возникают вопросы, обратитесь к вашим менеджерам удобным для вас способом, они ответят на все вопросы"
+                            image={school}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                </div>
+
+
+            </div>
+            <div className="resources-mobile">
+                <div className="column">
+                    <div className="point">
+                        <SimpleAdvavntage title="Преподаватели"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
+                            image={star}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Поддержка"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
+                            image={message}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Гибкость"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
+                            image={users}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Опыт"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
+                            image={clock}
+                            textStyle={mainTextStyle}
+                        />
+                    </div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Местоположение"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
+                            image={map}
+                            textStyle={mainTextStyle}
+                        /></div>
+                    <div className="point">
+                        <SimpleAdvavntage title="Методика"
+                            mainText="Лёгкий, удобный и доступный на любом уровне знаний процесс изучения"
                             image={school}
                             textStyle={mainTextStyle}
                         />

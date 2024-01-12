@@ -7,11 +7,12 @@ import "./SimpleImgLink.css"
 const SimpleImgLink = (props) => {
     var option_text = props.text;
     var img = props.img
+    const link_to = props.link
 
     return (
 
         <div className="simple-img-link">
-            <Link to='/Adults'>
+            <Link to={link_to}>
                 <div className='background-image'>
                     {/* <img className="menu-image" scr={img} fit="fill" /> */}
                     <img className="menu-image" src={img}></img>

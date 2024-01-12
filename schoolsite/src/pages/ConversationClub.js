@@ -7,8 +7,10 @@ import "../css/ConversationClub.css"
 import kv from "../images/Kvadrat.jpg"
 
 const ConversationClub = () => {
-    const title = <Title color="white">Разговорные<br />клубы</Title>
-    const PRIMARY_COL_HEIGHT = rem(300);
+    // const title = <Title color="white">Разговорные<br />клубы</Title>
+    const title = "Разговорные клубы"
+
+    const PRIMARY_COL_HEIGHT = rem(200);
     const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
 
     return (
@@ -16,13 +18,13 @@ const ConversationClub = () => {
             <Cover title={title} img={img} />
 
             <div className="about-conversation-club">
-                <div className="description">
+                <div className="description-sp">
                     <div data-aos="fade-up" data-aos-duration="800">
                         <Title className="title" size={50}>Что такое разговорный клуб?</Title>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><Divider /></div>
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        <Text size={25} className="text">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
+                        <Text size={25} className="text-seaking-club">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
                     </div>
                 </div>
                 <Container my="md">

@@ -1,9 +1,17 @@
-.menu-layout {
+.menu-layout-desktop {
     display: flex;
     margin: 10% 10% 3%;
     max-height: max-content;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.menu-layout-mobile {
+    display: flex;
+    margin: 10% 10% 3%;
+    max-height: max-content;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .main-text {
@@ -16,4 +24,35 @@
 .menu-button {
     margin-top: 30px;
     justify-content: left;
+}
+
+@media screen and (max-width:897px) {
+
+    .menu-layout-desktop {
+        display: none;
+    }
+
+    .main-text {
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 110%;
+        text-align: center;
+        color: rgb(87, 87, 87);
+    }
+
+    .menu-button {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: left;
+    }
+
+}
+
+@media screen and (min-width:897px) {
+
+    .menu-layout-mobile {
+        display: none;
+    }
+
+
 }

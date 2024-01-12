@@ -35,7 +35,7 @@ const Intensive = () => {
 
                 </div>
                 <Group className='block-simple-button' mt="md">
-                    <Button className='simple-button' variant="filled">Подробнее</Button>
+                    <Button style={{ justifyContent: "flex-end" }} className='simple-button' variant="filled">Подробнее</Button>
                 </Group>
             </div>
         </div>

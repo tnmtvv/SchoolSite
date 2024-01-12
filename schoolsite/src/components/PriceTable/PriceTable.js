@@ -26,27 +26,29 @@ const PriceTable = (props) => {
             mantineTableBodyCellProps: {
                 align: 'center',
             },
+            // enableResizing: true
         },
         {
             accessorKey: 'duration',
-            header: 'Продолжительность',
+            header: 'Время',
             mantineTableHeadCellProps: {
                 align: 'center',
             },
             mantineTableBodyCellProps: {
                 align: 'center',
             },
+            // enableResizing: true
         },
-        {
-            accessorKey: 'num', //normal accessorKey
-            header: 'Количество занятий',
-            mantineTableHeadCellProps: {
-                align: 'center',
-            },
-            mantineTableBodyCellProps: {
-                align: 'center',
-            },
-        },
+        // {
+        //     accessorKey: 'num', //normal accessorKey
+        //     header: 'Количество занятий',
+        //     mantineTableHeadCellProps: {
+        //         align: 'center',
+        //     },
+        //     mantineTableBodyCellProps: {
+        //         align: 'center',
+        //     },
+        // },
         {
             accessorKey: 'price',
             header: 'Цена',
@@ -56,15 +58,17 @@ const PriceTable = (props) => {
             mantineTableBodyCellProps: {
                 align: 'center',
             },
+            // enableResizing: true
         },
     ];
 
     const table = useMantineReactTable({
         columns,
         data,
-        defaultColumn: { minSize: 40, maxSize: 1000, size: 180 },
+        defaultColumn: { minSize: 0, maxSize: 1000, size: 100 },
         enableColumnActions: false,
         enableColumnFilters: false,
+        enableColumnResizing: false,
         enablePagination: false,
         enableSorting: false,
         mantineTableProps: {

@@ -8,6 +8,17 @@
     line-height: 0;
 }
 
+.header-grid {
+    display: flex;
+    justify-content: center;
+    font-size: 180%;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 7%;
+    margin-top: 10%;
+    line-height: 1;
+    text-align: center;
+}
 
 .one-row {
     display: flex;
@@ -25,4 +36,33 @@
     /* Opera */
     cursor: pointer;
     filter: brightness(120%);
+}
+
+.grid-mobile .menu-image:hover {
+    -webkit-transition: 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: 1s ease;
+    /* Firefox 4 */
+    -o-transition: 1s ease;
+    /* Opera */
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+@media screen and (max-width: 1115px) {
+    .grid-desktop {
+        display: none;
+    }
+
+    .main-grid {
+        width: 90%;
+        margin: 5%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1115px) {
+    .grid-mobile {
+        display: none;
+    }
 }

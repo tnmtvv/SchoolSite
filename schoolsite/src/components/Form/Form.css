@@ -11,12 +11,26 @@
     border-radius: 5%;
     background-color: rgba(255, 255, 255, .2);
 }
-.form-button{
+
+.form-button {
+    display: flex;
     margin-top: 50px;
     justify-content: end;
 }
+
 .text-input {
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 29rem;
+}
+
+@media screen and (max-width:597px) {
+    .text-input {
+        width: 100%;
+    }
+
+    .form {
+        width: 90%;
+    }
 }

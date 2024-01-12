@@ -1,6 +1,8 @@
 .about {
     background-color: rgb(226, 226, 226);
-    padding: 100px 230px;
+    max-width: 100%;
+    padding: 10% 15%;
+    text-align: center;
 }
 
 .about-title {
@@ -10,4 +12,11 @@
 
 .about-text {
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1105px) {
+    .about-title {
+        display: flex;
+        justify-content: center;
+    }
 }

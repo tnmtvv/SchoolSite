@@ -8,7 +8,7 @@ const ExamAdvantage = (props) => {
     const img = props.image
     const examTextStyle = {
         maxWidth: "90%",
-        width: "60%",
+        width: "80%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -20,9 +20,9 @@ const ExamAdvantage = (props) => {
                 Эффективная подготовка с My Smart
             </div>
             <div className="advantages">
-                <SimpleAdvantage title={'Бесплатное тестирование'} mainText={'Помогаем определить текущий уровень владения языком т составляем индивидуальный план занятий'} image={img} textStyle={examTextStyle} />
+                <SimpleAdvantage title={'Бесплатное тестирование'} mainText={'Помогаем определить текущий уровень владения языком'} image={img} textStyle={examTextStyle} />
                 <SimpleAdvantage title={'Преподаватели профессионалы'} mainText={'Проводим занятия с международными экзаменаторами и носителями языка'} image={img} textStyle={examTextStyle} />
-                <SimpleAdvantage title={'Лучшие программы'} mainText={'Наши программы разработаны опытными педагогами в соответствии с международными стандартами'} image={img} textStyle={examTextStyle} />
+                <SimpleAdvantage title={'Лучшие программы'} mainText={'Наши программы разработаны опытными педагогами'} image={img} textStyle={examTextStyle} />
             </div >
         </div>
     )

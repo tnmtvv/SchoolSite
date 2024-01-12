@@ -1,17 +1,33 @@
-.carousel-block{
+.carousel-block {
     display: flex;
     justify-content: center;
 }
 
-.reviews {
+.reviews-desktop {
     width: 60%;
     text-align: center;
 }
 
-.reviews-title {
-    margin-bottom: 100px;
+.reviews-mobile {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
 }
 
+.reviews-title {
+    margin: 5%;
+}
 
+@media screen and (max-width: 1105px) {
+    .reviews-desktop {
+        display: none;
+    }
 
+}
 
+@media screen and (min-width: 1105px) {
+    .reviews-mobile {
+        display: none;
+    }
+
+}

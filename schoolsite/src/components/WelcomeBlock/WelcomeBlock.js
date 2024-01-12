@@ -8,7 +8,10 @@ const WelcomeBlock = () => {
             <BackgroundImage src={img} min-height="41.25rem">
                 <Box mih={804} >
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
-                        <Text className='welcome-text' color="white" size={90} fw={700}>Welcome To Smart School</Text>
+                        <Text className='welcome-text-desktop' color="white" size={90} fw={700}>Welcome To Smart School</Text>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500">
+                        <Text className='welcome-text-mobile' color="white" size={70} fw={700}>Welcome <br />To <br />MySmart</Text>
                     </div>
                 </Box>
             </BackgroundImage>

@@ -17,7 +17,7 @@ const SimpleAdvavntage = (props) => {
                 <Image src={img} alt='...' cover priority />
             </div>
             <div style={textStyle}>
-                <h1 className="simple-adv-header">{title}</h1>
+                <h1 className="simple-adv-header"> {title} </h1>
                 <h1 className="simple-main-text"> {mainText} </h1>
             </div>
         </div>

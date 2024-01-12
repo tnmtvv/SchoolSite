@@ -1,9 +1,9 @@
 .simple-adv {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin-bottom: 3%;
-    /* margin-left: 30%; */
+    margin-left: 3%;
 }
 
 .simple-text-block {
@@ -25,12 +25,24 @@
 .simple-main-text {
     font-family: sans-serif;
     font-weight: lighter;
+    line-height: 1.1;
     font-size: 110%;
     color: rgb(87, 87, 87);
 }
 
 .simple-img {
-    height: 45px;
-    width: 45px;
+    height: 10%;
+    width: 10%;
     margin-right: 2%;
+}
+
+.img-title {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1105px) {
+    .simple-adv-header {
+        padding-bottom: 2%;
+    }
 }

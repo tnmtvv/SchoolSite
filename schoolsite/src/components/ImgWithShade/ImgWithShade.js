@@ -10,7 +10,7 @@ const ImgWithShade = (props) => {
             <div className='CEFR-image'>
                 <Image src={img} alt='...' position='top' fill priority />
             </div>
-            <div className='img-shade'></div>
+            {/* <div className='img-shade'></div> */}
         </div>
     )
 }

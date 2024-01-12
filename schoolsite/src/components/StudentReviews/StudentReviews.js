@@ -14,9 +14,23 @@ const StudentReviews = () => {
     ));
 
     return (
-        <div className="carousel-block">
-            <div className="reviews" style={{ margin: "100px" }}>
-            <Text size={45}className="reviews-title">Отзывы студентов</Text>
+        <div hidden className="carousel-block">
+            <div className="reviews-desktop" style={{ margin: "100px" }}>
+                <Text size={45} className="reviews-title">Отзывы студентов</Text>
+                <Carousel
+                    dragFree
+                    slideGap="md"
+                    align="start"
+                    height="100%"
+                    slidesToScroll={1}
+                    loop
+                    controlSize={40}
+                >
+                    {slides}
+                </Carousel>
+            </div>
+            <div className="reviews-mobile">
+                <Text size={45} className="reviews-title">Отзывы студентов</Text>
                 <Carousel
                     dragFree
                     slideGap="md"

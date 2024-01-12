@@ -47,30 +47,39 @@ const FooterLinks = () => {
       <div className="footer-left">
 
         <div className="groups">{links}</div>
-        <div className="address">{address}</div>
+        <div className="adress-map-mobile">
+          <div className="address-mobile">{address}</div>
+          <div className="map-mobile">
+            <Image className="image"
+              src={img} />
+          </div>
+        </div>
+        <div className="address-desktop">{address}</div>
         <div className="map-reviews">
           <div className="google-logo">
-        <Image 
-          src={googleImg} />
+            <Image
+              src={googleImg} />
           </div>
           <div className="google">
-        <Image 
-          src={google} />
+            <Image
+              src={google} />
           </div>
           <div className="yandex-logo">
-          <Image 
-          src={yandexImg} />
+            <Image
+              src={yandexImg} />
           </div>
           <div className="yandex">
-        <Image 
-          src={yandex} />  
+            <Image
+              src={yandex} />
           </div>
+
+        </div>
+        <div className="map-desktop">
+          <Image className="image"
+            src={img} />
         </div>
       </div>
-        <div className="map">
-          <Image 
-          src={img} />
-        </div>
+
     </footer>
   );
 }

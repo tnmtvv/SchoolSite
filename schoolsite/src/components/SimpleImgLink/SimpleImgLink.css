@@ -69,3 +69,10 @@ a {
     /* position: relative; */
     bottom: 150px;
 }
+
+
+@media screen and (max-width: 1105px) {
+    .simple-img-link {
+        padding-bottom: 5%;
+    }
+}

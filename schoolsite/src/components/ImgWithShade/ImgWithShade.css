@@ -1,18 +1,18 @@
 .img-with-shade {
-    height: 625px;
+    height: fit-content;
     position: relative;
     background-color: rgba(224, 221, 221, 1);
     z-index: -10;
+    padding-bottom: 3%;
 }
 
 .CEFR-image {
     margin-left: 10%;
     margin-bottom: 5%;
 
-    height: 609px;
-    width: 800px;
-
-    padding-top: 3%;
+    height: auto;
+    width: 50%;
+    box-shadow: -20px 20px 2px 1px #bfbebe;
     display: flex;
     justify-content: flex-end;
 }
@@ -21,10 +21,29 @@
     display: flex;
     justify-content: flex-start;
     background-color: rgba(188, 185, 185, 1);
+
     width: 800px;
-    height: 509px;
+    /* height: 509px; */
     position: relative;
     top: -100%;
     right: -8%;
     z-index: -5;
+}
+
+@media screen and (max-width:1105px) {
+    .CEFR-image {
+        /* height: 609px; */
+        width: 80%;
+        height: auto;
+    }
+
+    .img-with-shade {
+        height: auto;
+        padding-bottom: 5%;
+        position: relative;
+
+        background-color: rgba(224, 221, 221, 1);
+        z-index: -10;
+    }
+
 }

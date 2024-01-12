@@ -11,40 +11,58 @@ const CourseGrid = () => {
         height: "fit-content"
     }
     return (
-        <div className='main-grid'>
-            <div className="header_adv">
-                Выберите свой курс
+        <div>
+            <div className='main-grid'>
+                <div className="header-grid">
+                    Выберите свой курс
+                </div>
+                <div className='grid-desktop'>
+                    <div className='one-row'>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Adults'} text={'Английский язык для \nвзрослых'} />
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Children'} text={'Английский язык для детей'} />
+                        </div>
+                    </div>
+                    <div className='one-row'>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Languages'} text={'Другие языки'} />
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/ConversationClub'} text={'Разговорные клубы'} />
+                        </div>
+                    </div>
+                    <div className='one-row'>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Teachers'} text={'Наши преподаватели'} />
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Exams'} text={'Экзамены'} />
+                        </div>
+                    </div>
+                </div>
+                <div className='grid-mobile'>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Adults'} text={'Английский язык для \nвзрослых'} />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Children'} text={'Английский язык для детей'} />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Languages'} text={'Другие языки'} />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/ConversationClub'} text={'Разговорные клубы'} />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Teachers'} text={'Наши преподаватели'} />
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                        <SimpleImgLink className='smpl-img-instance' img={img_to_prop} link={'/Exams'} text={'Экзамены'} />
+                    </div>
+                </div>
             </div>
-            <div className='one-row'>
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Английский язык для \nвзрослых'} />
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Английский язык для детей'} />
-                </div>
-            </div>
-            <div className='one-row'>
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Другие языки'} />
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Разговорные клубы'} />
-                </div>
-            </div>
-            <div className='one-row'>
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Наши преподаватели'} />
-                </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <SimpleImgLink className='smpl-img-instance' img={img_to_prop} text={'Экзамены'} />
-                </div>
-            </div>
-            {/* <div className="grid-el"></div>
-            <div className="grid-el"></div>
-            <div className="grid-el"></div>
-            <div className="grid-el"></div>
-            <div className="grid-el"></div>
-            <div className="grid-el"></div> */}
         </div>
     )
 }

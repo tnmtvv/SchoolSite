@@ -10,6 +10,7 @@ import StudentReviews from "../components/StudentReviews/StudentReviews";
 import FormForMainPage from "../components/FormForMainPage/FormForMainPage";
 import Resources from "../components/Resources/Resources";
 import CourseGrid from "../components/CoursesGrid/CoursesGrid";
+import LeadGrid from "../components/MainPhotoGrid/MainPhotoGrid"
 
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
             <MainBlock />
             <WelcomeBlock />
             <AboutCompanyBlock />
-            <MainCarousel />
+            {/* <MainCarousel /> */}
+            <LeadGrid />
             <CourseGrid />
             <Resources />
             <StudentReviews />

@@ -64,3 +64,54 @@
     transition-duration: 0.5s;
     color: white;
 }
+
+@media screen and (max-width:1105px) {
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        background-color: rgba(236, 233, 233, 1);
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 120%;
+        color: rgb(87, 87, 87);
+        margin-bottom: 10%;
+    }
+
+    .text-image {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: ; */
+    }
+
+    .text-block {
+        width: 100%;
+        /* height: 100%; */
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .block-simple-button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .all-content {
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}
