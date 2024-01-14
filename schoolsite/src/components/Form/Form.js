@@ -59,7 +59,7 @@ const Form = () => {
                     <Button
                         size='md'
                         radius="md"
-                        color='red' type="submit">Отправить</Button>
+                        className='menu-button' type="submit">Отправить</Button>
                 </Group>
             </form>
         </Box>

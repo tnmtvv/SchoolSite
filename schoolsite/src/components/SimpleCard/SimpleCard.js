@@ -17,7 +17,9 @@ const SimpleCard = (props) => {
             <h1 className="card-header">{title}</h1>
             <h1 className="main-text"> {mainText} </h1>
             <Group className='block-menu-button' mt="md">
-                {localButton}
+                <div>
+                    {localButton}
+                </div>
             </Group>
         </div>
     )

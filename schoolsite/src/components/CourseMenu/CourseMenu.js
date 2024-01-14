@@ -32,30 +32,30 @@ const cardStyleMobile = {
 /* the viewport is less than 400 pixels wide */
 // }
 
-calcSceneStart2();
-window.addEventListener('DOMContentLoaded', function () {
-  window.addEventListener('resize', calcSceneStart2);
-});
+// calcSceneStart2();
+// window.addEventListener('DOMContentLoaded', function () {
+//   window.addEventListener('resize', calcSceneStart2);
+// });
 
-function calcSceneStart2() {
-  if (window.matchMedia("(max-width: 1105px)").matches) {
-    // var cardStyle_1 = {
-    //   maxWidth: "30%",
-    //   justifyContent: "center",
-    //   height: "fit-content"
-    // }
-    console.log("rabbit")
-  } else {
-    // var cardStyle_1 = {
-    //   maxWidth: "100%",
-    //   justifyContent: "center",
-    //   height: "fit-content"
-    // }
-    console.log("fox")
-  }
-  // cardStyle = cardStyle_1;
-  // console.log(cardStyle)
-}
+// function calcSceneStart2() {
+//   if (window.matchMedia("(max-width: 1105px)").matches) {
+//     // var cardStyle_1 = {
+//     //   maxWidth: "30%",
+//     //   justifyContent: "center",
+//     //   height: "fit-content"
+//     // }
+//     console.log("rabbit")
+//   } else {
+//     // var cardStyle_1 = {
+//     //   maxWidth: "100%",
+//     //   justifyContent: "center",
+//     //   height: "fit-content"
+//     // }
+//     console.log("fox")
+//   }
+//   // cardStyle = cardStyle_1;
+//   // console.log(cardStyle)
+// }
 
 const CourseMenu = (props) => {
   const button_1 = props.button_1

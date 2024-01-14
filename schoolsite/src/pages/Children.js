@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Cover from "../components/Cover/Cover";
 import { Table, Title, Button } from "@mantine/core";
 import img from "../images/EnglishForChildrenCover.jpg"
 import Intensive from "../components/Intensive/Intensive";
 import PriceTable from "../components/PriceTable/PriceTable"
 import CourseMenu from "../components/CourseMenu/CourseMenu";
+import PopUpLanguages from "../components/PopUpLanguages/PopUpLanguages";
 
 const Children = () => {
     const title = "Английский для детей"
@@ -16,18 +17,27 @@ const Children = () => {
         { id: 5, age: 58, duration: '45-60 м', num: 'Ce', price: 'Cerium' },
     ];
 
-    const [popUpActive_1, setpopUpActive_1] = useState(false)
-    const [popUpActive_2, setpopUpActive_2] = useState(false)
-    const [popUpActive_3, setpopUpActive_3] = useState(false)
+    const toCoverForm = useRef(null)
 
-    const button_1 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActive_1(true)}>{"Записаться на тестирование"}</Button>
-    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActive_2(true)}>{"Узнать расписание"}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActive_3(true)}>{"Узнать расписание"}</Button>
+    const scrollToSection = (elementRef) => {
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth"
+        })
+    }
+
+    // const [popUpActive_1, setpopUpActive_1] = useState(false)
+    const [popUpActiveKids_2, setpopUpActiveKids_2] = useState(false)
+    const [popUpActiveKids_3, setpopUpActiveKids_3] = useState(false)
+
+    const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{"Записаться на тестирование"}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_2(true)}>{"Узнать расписание"}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_3(true)}>{"Узнать расписание"}</Button>
 
 
     return (
         <div>
-            <div>
+            <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
             </div>
             <div>
@@ -42,6 +52,11 @@ const Children = () => {
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <PriceTable data={prices}></PriceTable>
             </div>
+
+            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
+                active={popUpActiveKids_2} setActive={setpopUpActiveKids_2}></PopUpLanguages>
+            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
+                active={popUpActiveKids_3} setActive={setpopUpActiveKids_3}></PopUpLanguages>
         </div>
 
     )

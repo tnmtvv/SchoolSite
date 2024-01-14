@@ -38,7 +38,7 @@
 }
 
 .menu-button:hover {
-    background: rgb(126, 28, 28);
+    background: rgb(180, 28, 28);
     transition-duration: 0.5s;
     color: white;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useRef } from "react";
 import { Image } from '@mantine/core';
 import PriceTable from "../components/PriceTable/PriceTable"
 import WelcomeBlock from "../components/WelcomeBlock/WelcomeBlock";
@@ -14,18 +14,23 @@ import LeadGrid from "../components/MainPhotoGrid/MainPhotoGrid"
 
 
 const Home = () => {
-
+    const toForm = useRef(null)
+    const toAbout = useRef(null)
     return (
         <div>
-            <MainBlock />
+            <MainBlock toForm={toForm} toAbout={toAbout} />
             <WelcomeBlock />
-            <AboutCompanyBlock />
+            <div ref={toAbout}>
+                <AboutCompanyBlock />
+            </div>
             {/* <MainCarousel /> */}
             <LeadGrid />
             <CourseGrid />
             <Resources />
             <StudentReviews />
-            <FormForMainPage />
+            <div ref={toForm}>
+                <FormForMainPage ref={toForm} />
+            </div>
         </div>
     )
 }

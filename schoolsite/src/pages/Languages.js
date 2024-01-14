@@ -22,9 +22,9 @@ const Languages = () => {
                 <Cover title={title} img={coverimg} />
             </div>
             <CardForLanguages button_1={button_1} button_2={button_2} />
-            <PopUpLanguages header={"Китайский"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
-                active={popUpActive_1} setActive={setpopUpActive_1}></PopUpLanguages>
             <PopUpLanguages header={"Испанский"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
+                active={popUpActive_1} setActive={setpopUpActive_1}></PopUpLanguages>
+            <PopUpLanguages header={"Китайский"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
                 active={popUpActive_2} setActive={setpopUpActive_2}></PopUpLanguages>
 
         </div>
