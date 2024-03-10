@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 import SimpleCard from "../SimpleCard/SimpleCard";
 import "./CardForLanguages.css"

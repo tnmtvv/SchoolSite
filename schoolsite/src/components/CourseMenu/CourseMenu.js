@@ -2,8 +2,6 @@ import React from 'react';
 import "./CourseMenu.css"
 import img from '../../images/english-speaking-club.jpg'
 import SimpleCard from '../SimpleCard/SimpleCard';
-import $ from '../../../node_modules/jquery';
-
 // if (window.matchMedia("(max-width: 897px)").matches) {
 const cardStyleDesktop = {
   maxWidth: "30%",
@@ -94,7 +92,7 @@ const CourseMenu = (props) => {
           'а также "soft skills", необходимые для школьников.'} button={button_3}
           image={img} simpleCardStyle={cardStyleMobile} />
       </div>
-      
+
     </div>
   );
 }
