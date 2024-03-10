@@ -94,6 +94,7 @@ const CourseMenu = (props) => {
           'а также "soft skills", необходимые для школьников.'} button={button_3}
           image={img} simpleCardStyle={cardStyleMobile} />
       </div>
+      
     </div>
   );
 }

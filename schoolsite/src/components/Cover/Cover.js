@@ -3,6 +3,7 @@ import { BackgroundImage, Box, Title, Divider } from '@mantine/core';
 import Form from "../Form/Form";
 import "./Cover.css"
 import MainBlock from "../MainBlock/MainBlock";
+import handleFormSubmit from "../../requests/handleFormSubmit";
 const Cover = ({ img, title }) => {
     return (
         <Box className="cover" mih={804} >
@@ -26,7 +27,7 @@ const Cover = ({ img, title }) => {
                     <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                         <div className="flex-form">
                             <div className="cover-form">
-                                <Form />
+                                <Form onFormSubmit={handleFormSubmit} />
                             </div>
                         </div>
                     </div>

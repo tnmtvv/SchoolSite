@@ -2,9 +2,11 @@ import React from 'react';
 import { TextInput, Title, Button, Group, Box } from '@mantine/core';
 import { Textarea } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import './Form.css'
 
-const Form = () => {
+import './Form.css'
+import handleFormSubmit from '../../requests/handleFormSubmit';
+
+const Form = ({ onFormSubmit }) => {
     const form = useForm({
         initialValues: {
             name: '',
@@ -19,10 +21,14 @@ const Form = () => {
             phone: (value) => (/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/.test(value) ? null : 'Неккоректный номер')
         },
     });
+    const onSubmit = (event) => {
+        event.preventDefault()
+        form.reset()
+    }
 
     return (
         <Box className='form' maw={460} mx="auto">
-            <form onSubmit={form.onSubmit((values) => console.log(values))}>
+            <form onSubmit={e => onSubmit(e)}>
                 <Title order={2} color='white'>Запись на пробное занятие</Title>
                 <TextInput
                     className='text-input'
@@ -59,7 +65,8 @@ const Form = () => {
                     <Button
                         size='md'
                         radius="md"
-                        className='menu-button' type="submit">Отправить</Button>
+                        // onSubmit={e => onFormSubmit(e)}
+                        className='menu-button' type="submit" onClick={() => { handleFormSubmit(form.values) }}>Отправить</Button>
                 </Group>
             </form>
         </Box>
