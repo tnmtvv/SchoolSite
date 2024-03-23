@@ -8,23 +8,26 @@ import PopUpLanguages from "../components/PopUpLanguages/PopUpLanguages";
 import "../components/SimpleCard/SimpleCard.css";
 import coverimg from "../images/languages.jpeg"
 import Cover from "../components/Cover/Cover";
+import texts from "../texts/Languages.json";
 
 const Languages = () => {
-    const title = "Другие языки"
+    const texts_lang = texts.texts[0]
+    const title = texts_lang["title"]
+
     const [popUpActive_1, setpopUpActive_1] = useState(false)
     const [popUpActive_2, setpopUpActive_2] = useState(false)
 
-    const button_2 = <Button className='menu-button' variant="filled" fullWidth onClick={() => setpopUpActive_2(true)}>{"Узнать подробнее"}</Button>
-    const button_1 = <Button className='menu-button' variant="filled" fullWidth onClick={() => setpopUpActive_1(true)}>{"Узнать подробнее"}</Button>
+    const button_1 = <Button className='menu-button' variant="filled" fullWidth onClick={() => setpopUpActive_1(true)}>{texts_lang["button_1"]}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" fullWidth onClick={() => setpopUpActive_2(true)}>{texts_lang["button_2"]}</Button>
     return (
         <div>
             <div>
                 <Cover title={title} img={coverimg} />
             </div>
-            <CardForLanguages button_1={button_1} button_2={button_2} />
-            <PopUpLanguages header={"Испанский"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
+            <CardForLanguages button_1={button_1} button_2={button_2} textBlockShade={texts_lang["textBlockShade"]} langMainText={texts_lang["langMainText"]} />
+            <PopUpLanguages header={texts_lang["LanguageOne"]} text={texts_lang["textLanguagesOne"]}
                 active={popUpActive_1} setActive={setpopUpActive_1}></PopUpLanguages>
-            <PopUpLanguages header={"Китайский"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
+            <PopUpLanguages header={texts_lang["LanguageTwo"]} text={texts_lang["textLanguagesTwo"]}
                 active={popUpActive_2} setActive={setpopUpActive_2}></PopUpLanguages>
 
         </div>

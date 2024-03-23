@@ -2,7 +2,6 @@ import React from "react";
 import { BackgroundImage, Box, Title, Divider } from '@mantine/core';
 import Form from "../Form/Form";
 import "./Cover.css"
-import MainBlock from "../MainBlock/MainBlock";
 import handleFormSubmit from "../../requests/handleFormSubmit";
 const Cover = ({ img, title }) => {
     return (

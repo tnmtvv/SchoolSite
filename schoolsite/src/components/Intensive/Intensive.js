@@ -4,7 +4,8 @@ import './Intensive.css'
 import img from '../../images/camp.jpg'
 
 
-const Intensive = () => {
+const Intensive = (props) => {
+    const localButton = props.localButton
     return (
         <div className="main-block">
             <div className='all-content'>
@@ -35,7 +36,8 @@ const Intensive = () => {
 
                 </div>
                 <Group className='block-simple-button' mt="md">
-                    <Button style={{ justifyContent: "flex-end" }} className='simple-button' variant="filled">Подробнее</Button>
+                    {localButton}
+
                 </Group>
             </div>
         </div>

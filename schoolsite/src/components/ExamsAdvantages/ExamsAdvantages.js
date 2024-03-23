@@ -12,17 +12,32 @@ const ExamAdvantage = (props) => {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        lineHeight: "1"
+        lineHeight: "1",
+
     }
+    const header = props.header
+    const advs = props.advs
+    const texts = props.texts
+
+    const title_1 = advs['test']
+    const title_2 = advs['teachers']
+    const title_3 = advs['programs']
+
+    const text_1 = texts['text_1']
+    const text_2 = texts['text_2']
+    const text_3 = texts['text_3']
+
+
+
     return (
         < div className="main-exam-block">
             <div className="header_adv">
-                Эффективная подготовка с My Smart
+                {header}
             </div>
             <div className="advantages">
-                <SimpleAdvantage title={'Бесплатное тестирование'} mainText={'Помогаем определить текущий уровень владения языком'} image={img} textStyle={examTextStyle} />
-                <SimpleAdvantage title={'Преподаватели профессионалы'} mainText={'Проводим занятия с международными экзаменаторами и носителями языка'} image={img} textStyle={examTextStyle} />
-                <SimpleAdvantage title={'Лучшие программы'} mainText={'Наши программы разработаны опытными педагогами'} image={img} textStyle={examTextStyle} />
+                <SimpleAdvantage title={title_1} mainText={text_1} image={img} textStyle={examTextStyle} />
+                <SimpleAdvantage title={title_2} mainText={text_2} image={img} textStyle={examTextStyle} />
+                <SimpleAdvantage title={title_3} mainText={text_3} image={img} textStyle={examTextStyle} />
             </div >
         </div>
     )
