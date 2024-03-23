@@ -1,3 +1,5 @@
+
+/*
 .modal {
     height: 0px;
     width: 0px;
@@ -14,7 +16,6 @@
     transition: 0.5s;
     transform: scale(0);
 }
-
 .modal.active {
     height: 100%;
     width: 100vw;
@@ -25,19 +26,9 @@
 .modal.scroll {
     position: fixed;
 }
+*/
 
-.modal_content.active {
-    /* position: relative; */
-    border-radius: 12px;
-    padding: 20px;
-    background-color: white;
-    /* height: fit-content; */
-    width: 50vw;
-}
 
-.modal_content {
-    min-width: 0;
-}
 
 
 .header-pop-up {
