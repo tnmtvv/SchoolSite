@@ -1,24 +1,42 @@
-import { Container, Grid, SimpleGrid, Skeleton, rem } from '@mantine/core';
 import React from 'react';
-const PRIMARY_COL_HEIGHT = rem(300);
+import { Container, Grid, SimpleGrid, Skeleton, rem } from '@mantine/core';
+import './MainPhotoGrid.css'
 
-export function LeadGrid() {
-    // const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
-    const SECONDARY_COL_HEIGHT = rem(200);
+const PRIMARY_COL_HEIGHT = rem(300);
+// const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
+const SECONDARY_COL_HEIGHT = rem(200);
+
+const LeadGrid = () => {
     return (
-        <div style={{ marginLeft: "12%", marginRight: "12%", marginTop: "10%" }}>
+        <div className="main-photo-grid">
             <Container my="md">
                 <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
-                    <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={false} />
+                    <Skeleton
+                        height={PRIMARY_COL_HEIGHT}
+                        radius="md"
+                        animate={false}
+                    />
                     <Grid gutter="md">
                         <Grid.Col>
-                            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+                            <Skeleton
+                                height={SECONDARY_COL_HEIGHT}
+                                radius="md"
+                                animate={false}
+                            />
                         </Grid.Col>
                         <Grid.Col span={6}>
-                            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+                            <Skeleton
+                                height={SECONDARY_COL_HEIGHT}
+                                radius="md"
+                                animate={false}
+                            />
                         </Grid.Col>
                         <Grid.Col span={6}>
-                            <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
+                            <Skeleton
+                                height={SECONDARY_COL_HEIGHT}
+                                radius="md"
+                                animate={false}
+                            />
                         </Grid.Col>
                     </Grid>
                 </SimpleGrid>

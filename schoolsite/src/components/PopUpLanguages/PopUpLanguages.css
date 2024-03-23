@@ -13,8 +13,6 @@
     pointer-events: none;
     transition: 0.5s;
     transform: scale(0);
-
-
 }
 
 .modal.active {

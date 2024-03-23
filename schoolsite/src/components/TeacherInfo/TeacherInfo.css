@@ -1,16 +1,21 @@
 .icon {
-    color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
-  }
-
-.teacherInfo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+  color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
 }
 
-.teacherDescription {
+.teacher-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.teacher-description {
   margin-left: 30px;
   margin-top: 70px;
   width: 45%;
 }
 
+.teacher-name {
+  background-color: #bfbebe;
+  padding: 10px;
+  text-align: center
+}

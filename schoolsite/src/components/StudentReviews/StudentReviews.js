@@ -1,21 +1,19 @@
-import React from "react";
+import React from 'react';
 import { Carousel } from '@mantine/carousel';
-import { Paper, Image, Text, Title, Button, useMantineTheme } from '@mantine/core';
-import reviews from "../../data/reviews"
-import "./StudentReviews.css"
+import { Image, Text } from '@mantine/core';
+import reviews from '../../data/reviews'
+import './StudentReviews.css'
 
 const StudentReviews = () => {
     const slides = reviews.map((item) => (
         <Carousel.Slide>
-            <div className="one-review">
-                <Image src={item} />
-            </div>
+            <div className="one-review"><Image src={item} /></div>
         </Carousel.Slide>
     ));
 
     return (
         <div hidden className="carousel-block">
-            <div className="reviews-desktop" style={{ margin: "100px" }}>
+            <div className="reviews-desktop">
                 <Text size={45} className="reviews-title">Отзывы студентов</Text>
                 <Carousel
                     dragFree
@@ -47,4 +45,4 @@ const StudentReviews = () => {
     );
 }
 
-export default StudentReviews
+export default StudentReviews;
