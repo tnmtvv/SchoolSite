@@ -4,16 +4,19 @@ import PriceTable from "../components/PriceTable/PriceTable";
 import img from '../images/check-mark-svgrepo-com.svg'
 import img2 from '../images/preparation.png'
 import img_table from '../images/CEFR.jpg'
-import img_table_mobile from '../images/CEFR-mobile.png'
-import { Table, Title, Text } from "@mantine/core";
 import Cover from "../components/Cover/Cover";
 import TextWithShade from "../components/TextWithShade/TextWithShade";
 import ImgWithShade from "../components/ImgWithShade/ImgWithShade";
 import ButtonOnTheLeft from "../components/ButtonTheLeft/ButtonOnTheLeft";
 import "../css/Exams.css"
+import texts from "../texts/Exams.json";
 
 const Exams = () => {
-    const title = "Подготовка к экзаменам"
+    const texts_exams = texts.texts[0]
+    const title = texts_exams["title"]
+    const advs = texts_exams['ExamAdvantage'][0]
+    console.log(advs)
+
     const prices = [
         { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
         { id: 2, age: 7, duration: '45-60 м', num: 'N', price: 'Nitrogen' },
@@ -28,7 +31,7 @@ const Exams = () => {
             <div>
                 <Cover title={title} img={img2} />
             </div>
-            <ExamAdvantage image={img} />
+            <ExamAdvantage image={img} header={advs['title']} advs={advs['advs'][0]} texts={advs['texts'][0]} />
             <TextWithShade />
 
             <ImgWithShade image={img_table} />
@@ -37,10 +40,10 @@ const Exams = () => {
                 <ImgWithShade image={img_table_mobile} />
             </div> */}
             <div className="button-desktop">
-                <ButtonOnTheLeft buttonText={'Оставить заявку'} size={"lg"} />
+                <ButtonOnTheLeft buttonText={texts_exams["button_text"]} size={"lg"} />
             </div>
             <div className="button-mobile">
-                <ButtonOnTheLeft buttonText={'Оставить заявку'} size={"md"} />
+                <ButtonOnTheLeft buttonText={texts_exams["button_text"]} size={"md"} />
             </div>
             <div className="header_adv">
                 Стоимость курсов

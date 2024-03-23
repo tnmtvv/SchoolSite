@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button, Group } from '@mantine/core';
+import { Button, Group } from '@mantine/core';
 import "./ButtonOnTheLeft.css"
 
 const ButtonOnTheLeft = (props) => {

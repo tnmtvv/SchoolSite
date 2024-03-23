@@ -6,9 +6,15 @@ import Intensive from "../components/Intensive/Intensive";
 import PriceTable from "../components/PriceTable/PriceTable"
 import CourseMenu from "../components/CourseMenu/CourseMenu";
 import PopUpLanguages from "../components/PopUpLanguages/PopUpLanguages";
+import texts from "../texts/Children.json";
 
 const Children = () => {
-    const title = "Английский для детей"
+    const texts_children = texts.texts[0]
+    const title = texts_children["title"]
+
+    const course_menu = texts_children["course_menu"][0]
+
+
     const prices = [
         { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
         { id: 2, age: 7, duration: '45-60 м', num: 'N', price: 'Nitrogen' },
@@ -30,21 +36,32 @@ const Children = () => {
     const [popUpActiveKids_2, setpopUpActiveKids_2] = useState(false)
     const [popUpActiveKids_3, setpopUpActiveKids_3] = useState(false)
 
-    const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{"Записаться на тестирование"}</Button>
-    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_2(true)}>{"Узнать расписание"}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_3(true)}>{"Узнать расписание"}</Button>
+    const [popUpActiveIntensive, setpopUpActiveIntensive] = useState(false)
+
+    const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{texts_children["button_1"]}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_2(true)}>{texts_children["button_2"]}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_3(true)}>{texts_children["button_3"]}</Button>
+    const button_4 = <Button style={{ justifyContent: "flex-end" }} className='simple-button' variant="filled" onClick={() => setpopUpActiveIntensive(true)}>{texts_children["button_4"]}</Button>
 
 
     return (
         <div>
+            <PopUpLanguages header={texts_children["popUpHeaderOne"]} text={texts_children["textLanguagesOne"]}
+                active={popUpActiveKids_2} setActive={setpopUpActiveKids_2}></PopUpLanguages>
+            <PopUpLanguages header={texts_children["popUpHeaderTwo"]} text={texts_children["textLanguagesTwo"]}
+                active={popUpActiveKids_3} setActive={setpopUpActiveKids_3}></PopUpLanguages>
+
+            <PopUpLanguages header={texts_children["popUpHeaderTwo"]} text={texts_children["intensive"]}
+                active={popUpActiveIntensive} setActive={setpopUpActiveIntensive}></PopUpLanguages>
+
             <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
             </div>
             <div>
-                <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3}></CourseMenu>
+                <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3} title_1={course_menu["courseMenuTitle1"]} title_2={course_menu["courseMenuTitle2"]} title_3={course_menu["courseMenuTitle3"]} text_1={course_menu["courseMenuText1"]} text_2={course_menu["courseMenuText2"]} text_3={course_menu["courseMenuText3"]}></CourseMenu>
             </div>
             <div>
-                <Intensive></Intensive>
+                <Intensive localButton={button_4}></Intensive>
             </div>
             <div className="header_adv">
                 Стоимость курсов
@@ -53,10 +70,7 @@ const Children = () => {
                 <PriceTable data={prices}></PriceTable>
             </div>
 
-            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
-                active={popUpActiveKids_2} setActive={setpopUpActiveKids_2}></PopUpLanguages>
-            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
-                active={popUpActiveKids_3} setActive={setpopUpActiveKids_3}></PopUpLanguages>
+
         </div>
 
     )

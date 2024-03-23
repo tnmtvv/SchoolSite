@@ -1,0 +1,24 @@
+{
+    "texts": [
+        {
+            "title": "Английский для взрослых",
+            "popUpHeaderOne": "Расписание",
+            "popUpHeaderTwo": "Расписание",
+            "textLanguagesOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna.",
+            "textLanguagesTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna.",
+            "button_1": "Записаться на тестирование",
+            "button_2": "Узнать расписание",
+            "button_3": "Узнать расписание",
+            "course_menu": [
+                {
+                    "courseMenuTitle1": "Узнать свой уровень",
+                    "courseMenuTitle2": "Группы уровней A1-C2",
+                    "courseMenuTitle3": "Для специальных целей",
+                    "courseMenuText1": "Программа учитывает возрастные и психологические особенности детей.\nУроки проводятся в игровой форме, но строятся так, чтобы ребята параллельно осваивали английский язык,\nучитывая все необходимые навыки.",
+                    "courseMenuText2": "Занятия английским языком для детей основываются на коммуникативном подходе.\nДети с удовольствием включаются в игру, стараются использовать в речи новые слова,\nучатся писать и читать на английском языке.",
+                    "courseMenuText3": "Курс позволит школьникам минимизировать стресс при сдаче экзаменов, поступить в выбранный ВУЗ\nи успешно реализоваться в жизни. Занятия проводятся преимущественно на английском языке,\n даже для тех, кто начинает обучение с нуля. Курс охватывает все языковые навыки,\n а также \"soft skills\", необходимые для школьников."
+                }
+            ]
+        }
+    ]
+}

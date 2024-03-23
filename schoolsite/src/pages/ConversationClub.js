@@ -5,10 +5,12 @@ import { Container, SimpleGrid, Skeleton } from '@mantine/core';
 import Cover from "../components/Cover/Cover.js"
 import "../css/ConversationClub.css"
 import kv from "../images/Kvadrat.jpg"
+import texts from "../texts/SpeakingClub.json";
 
 const ConversationClub = () => {
     // const title = <Title color="white">Разговорные<br />клубы</Title>
-    const title = "Разговорные клубы"
+    const texts_speaking = texts.texts[0]
+    const title = texts_speaking["title"]
 
     const PRIMARY_COL_HEIGHT = rem(200);
     const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
@@ -24,7 +26,7 @@ const ConversationClub = () => {
                     </div>
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><Divider /></div>
                     <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                        <Text size={25} className="text-seaking-club">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
+                        <Text size={25} className="text-seaking-club">{texts_speaking["text-seaking-club"]}</Text>
                     </div>
                 </div>
                 <Container my="md">

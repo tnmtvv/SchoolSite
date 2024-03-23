@@ -7,8 +7,12 @@ import PriceTable from "../components/PriceTable/PriceTable.js";
 import PopUpLanguages from "../components/PopUpLanguages/PopUpLanguages";
 import "../components/SimpleCard/SimpleCard.css";
 import { useRef } from "react";
+import texts from "../texts/Adults.json";
 
 const Adults = () => {
+    const texts_adults = texts.texts[0]
+    const course_menu = texts_adults["course_menu"][0]
+
     const prices = [
         { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
         { id: 2, age: 7, duration: '45-60 м', num: 'N', price: 'Nitrogen' },
@@ -16,7 +20,7 @@ const Adults = () => {
         { id: 4, age: 56, duration: '45-60 м', num: 'Ba', price: 'Barium' },
         { id: 5, age: 58, duration: '45-60 м', num: 'Ce', price: 'Cerium' },
     ];
-    const title = "Английский для взрослых"
+    const title = texts_adults["title"]
 
     const toCoverForm = useRef(null)
 
@@ -31,22 +35,22 @@ const Adults = () => {
     const [popUpActiveAdults_2, setpopUpActiveAdults_2] = useState(false)
     const [popUpActiveAdults_3, setpopUpActiveAdults_3] = useState(false)
 
-    const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{"Записаться на тестирование"}</Button>
-    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_2(true)}>{"Узнать расписание"}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_3(true)}>{"Узнать расписание"}</Button>
+    const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{texts_adults["button_1"]}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_2(true)}>{texts_adults["button_2"]}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_3(true)}>{texts_adults["button_3"]}</Button>
 
     return (
         <div>
 
-            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
-                active={popUpActiveAdults_2} setActive={setpopUpActiveAdults_2}></PopUpLanguages>
-            <PopUpLanguages header={"Расписание"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna."}
-                active={popUpActiveAdults_3} setActive={setpopUpActiveAdults_3}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderOne"]} text={texts_adults["textLanguagesOne"]}
+                active={texts_adults["popUpActiveAdults_2"]} setActive={setpopUpActiveAdults_2}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderTwo"]} text={texts_adults["textLanguagesTwo"]}
+                active={texts_adults["popUpActiveAdults_3"]} setActive={setpopUpActiveAdults_3}></PopUpLanguages>
             <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
             </div>
             <div>
-                <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3}></CourseMenu>
+                <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3} title_1={course_menu["courseMenuTitle1"]} title_2={course_menu["courseMenuTitle2"]} title_3={course_menu["courseMenuTitle3"]} text_1={course_menu["courseMenuText1"]} text_2={course_menu["courseMenuText2"]} text_3={course_menu["courseMenuText3"]}></CourseMenu>
             </div>
 
             <div className="header_adv">
