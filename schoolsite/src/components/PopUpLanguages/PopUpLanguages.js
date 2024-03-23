@@ -1,9 +1,23 @@
 import React from 'react';
+import { Modal } from '@mantine/core';
 import './PopUpLanguages.css'
 
-const PopUpLanguages = ({ header, text, active, setActive }) => {
+const PopUpLanguages = ({ header, text, opened, close }) => {
     return (
-        <div
+        <Modal
+            opened={opened}
+            onClose={close}
+            overlayProps={{
+                backgroundOpacity: 0.55,
+                blur: 3,
+            }}
+            size="lg"
+        >
+            <div className="header-pop-up">{header}</div>
+            <div className="main-text-pop-up">{text}</div>
+        </Modal>
+
+        /*<div
             className={active ? "modal active" : "modal"}
             onClick={() => setActive(false)}
         >
@@ -15,6 +29,7 @@ const PopUpLanguages = ({ header, text, active, setActive }) => {
                 <div className="main-text-pop-up">{text}</div>
             </div>
         </div>
+        */
     );
 };
 

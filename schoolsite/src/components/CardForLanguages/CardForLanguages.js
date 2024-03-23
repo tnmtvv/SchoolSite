@@ -24,12 +24,23 @@ const CardForLanguages = (props) => {
             <div className="cards">
                 <div data-aos="fade-up" data-aos-duration="1000">
                     <div className="card1">
-                        <SimpleCard imageSize={200} title="Испанский язык" image={sp} button={button_1} simpleCardStyle={cardStyle} />
+                        <SimpleCard
+                            imageSize={200}
+                            title="Испанский язык"
+                            image={sp}
+                            button={button_1}
+                            simpleCardStyle={cardStyle}
+                        />
                     </div>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                     <div className="card2">
-                        <SimpleCard imageSize={200} title="Китайский язык" image={ch} button={button_2} simpleCardStyle={cardStyle} />
+                        <SimpleCard 
+                        imageSize={200}
+                        title="Китайский язык" 
+                        image={ch} 
+                        button={button_2} 
+                        simpleCardStyle={cardStyle} />
                     </div>
                 </div>
 
