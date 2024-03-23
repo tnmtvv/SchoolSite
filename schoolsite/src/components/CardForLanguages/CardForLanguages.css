@@ -12,16 +12,6 @@
   position: relative;
 }
 
-.card2 {
-  width: 350px;
-  padding: 15px;
-  box-shadow: 30px 30px 2px 1px #bfbebe;
-  background-color: white;
-  display: inline-block;
-  position: relative;
-  top: 450px;
-  left: 300px;
-}
 
 .card1 {
   width: 350px;
@@ -33,6 +23,19 @@
   top: 0px;
   left: 0px;
 }
+
+.card2 {
+  width: 350px;
+  padding: 15px;
+  box-shadow: 30px 30px 2px 1px #bfbebe;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  top: 450px;
+  left: 300px;
+}
+
+
 
 .main-language-block {
   display: flex;
