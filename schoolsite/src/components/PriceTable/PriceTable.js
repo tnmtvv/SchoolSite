@@ -1,21 +1,8 @@
-import { Divider, Flex, Stack, Table, Title } from '@mantine/core';
 import React from 'react';
-// import { useMemo } from 'react';
-import {
-    flexRender,
-    MRT_GlobalFilterTextInput,
-    MRT_TablePagination,
-    MRT_Table,
-    MRT_ToolbarAlertBanner,
-    useMantineReactTable,
-    MantineReactTable,
-} from 'mantine-react-table';
+import { MRT_Table, useMantineReactTable } from 'mantine-react-table';
 import './PriceTable.css'
 
-const PriceTable = (props) => {
-    const data = props.data
-
-    //should be memoized or stable
+const PriceTable = ({ data }) => {
     const columns = [
         {
             accessorKey: 'age', //access nested data with dot notation
@@ -75,37 +62,10 @@ const PriceTable = (props) => {
             striped: true,
             highlightOnHover: false,
             withColumnBorders: false,
-
-        },//must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
-
+        },
     });
 
-    return (
-        <div className='table'>
-            <MRT_Table table={table} />
-        </div>
-    );
-    // return 
-    //         <Table
-    //             captionSide="top"
-    //             fontSize="md"
-    //             highlightOnHover
-    //             horizontalSpacing="md"
-    //             striped
-    //             verticalSpacing="md"
-    //             withBorder
-    //             withColumnBorders
-    //             m="10"
-    //         >
-    //             <thead>
-    //                 <tr>
-    //                     <Table.Th>Element position</Table.Th>
-    //                     <Table.Th>Element name</Table.Th>
-    //                     <Table.Th>Symbol</Table.Th>
-    //                     <Table.Th>Atomic mass</Table.Th>
-    //                 </tr>
-    //             </thead>
-    //         </Table>
-    //     );
+    return <div className="table"><MRT_Table table={table} /></div>
 };
+
 export default PriceTable;

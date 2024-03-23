@@ -1,7 +1,6 @@
 .header {
     display: flex;
     justify-content: space-around;
-
 }
 
 .logo {
@@ -24,6 +23,13 @@
 
 .link {
     padding-left: 10px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.link-icon{
+    width: 30px; 
+    height: 30px
 }
 
 .menu-buttons {

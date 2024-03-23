@@ -12,7 +12,6 @@
     position: relative;
     top: -9%;
     right: -64%;
-
 }
 
 .shade-exams {
@@ -36,7 +35,6 @@
 }
 
 @media screen and (max-width:1105px) {
-
     .shade-exams {
         display: flex;
         justify-content: flex-end;
@@ -76,17 +74,10 @@
     .text-block-shade-block-dekstop {
         display: none;
     }
-
-    /* 
-    .text-exams {
-        margin-top: 10%;
-    } */
-
 }
 
 @media screen and (min-width:1105px) {
     .text-block-shade-block-mobile {
         display: none;
     }
-
 }
