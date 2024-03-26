@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import img from "../images/EnglishForAdultsCover.jpg"
 import { Text, Button } from "@mantine/core"
+import { useDisclosure } from '@mantine/hooks';
 import Cover from "../components/Cover/Cover.js"
 import CourseMenu from "../components/CourseMenu/CourseMenu"
 import PriceTable from "../components/PriceTable/PriceTable.js";
@@ -12,6 +13,7 @@ import texts from "../texts/Adults.json";
 const Adults = () => {
     const texts_adults = texts.texts[0]
     const course_menu = texts_adults["course_menu"][0]
+    const [opened, { open, close }] = useDisclosure(false);
 
     const prices = [
         { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
@@ -32,20 +34,17 @@ const Adults = () => {
     }
 
     // const [popUpActive_1, setpopUpActive_1] = useState(false)
-    const [popUpActiveAdults_2, setpopUpActiveAdults_2] = useState(false)
-    const [popUpActiveAdults_3, setpopUpActiveAdults_3] = useState(false)
+
 
     const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{texts_adults["button_1"]}</Button>
-    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_2(true)}>{texts_adults["button_2"]}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveAdults_3(true)}>{texts_adults["button_3"]}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_adults["button_2"]}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_adults["button_3"]}</Button>
+
 
     return (
         <div>
-
-            <PopUpLanguages header={texts_adults["popUpHeaderOne"]} text={texts_adults["textLanguagesOne"]}
-                active={texts_adults["popUpActiveAdults_2"]} setActive={setpopUpActiveAdults_2}></PopUpLanguages>
-            <PopUpLanguages header={texts_adults["popUpHeaderTwo"]} text={texts_adults["textLanguagesTwo"]}
-                active={texts_adults["popUpActiveAdults_3"]} setActive={setpopUpActiveAdults_3}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderOne"]} text={texts_adults["textAdultsOne"]} opened={opened} close={close}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderTwo"]} text={texts_adults["textAdultsTwo"]} opened={opened} close={close}></PopUpLanguages>
             <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import Cover from "../components/Cover/Cover";
-import { Table, Title, Button } from "@mantine/core";
+import { useDisclosure } from '@mantine/hooks';
+import { Button } from "@mantine/core";
 import img from "../images/EnglishForChildrenCover.jpg"
 import Intensive from "../components/Intensive/Intensive";
 import PriceTable from "../components/PriceTable/PriceTable"
@@ -33,26 +34,27 @@ const Children = () => {
     }
 
     // const [popUpActive_1, setpopUpActive_1] = useState(false)
-    const [popUpActiveKids_2, setpopUpActiveKids_2] = useState(false)
-    const [popUpActiveKids_3, setpopUpActiveKids_3] = useState(false)
+    // const [popUpActiveKids_2, setpopUpActiveKids_2] = useState(false)
+    // const [popUpActiveKids_3, setpopUpActiveKids_3] = useState(false)
 
     const [popUpActiveIntensive, setpopUpActiveIntensive] = useState(false)
+    const [opened, { open, close }] = useDisclosure(false);
+
 
     const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{texts_children["button_1"]}</Button>
-    const button_2 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_2(true)}>{texts_children["button_2"]}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" onClick={() => setpopUpActiveKids_3(true)}>{texts_children["button_3"]}</Button>
-    const button_4 = <Button style={{ justifyContent: "flex-end" }} className='simple-button' variant="filled" onClick={() => setpopUpActiveIntensive(true)}>{texts_children["button_4"]}</Button>
+    const button_2 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_children["button_2"]}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_children["button_3"]}</Button>
+
+    const button_4 = <Button style={{ justifyContent: "flex-end" }} className='simple-button' variant="filled" onClick={open}>{texts_children["button_4"]}</Button>
 
 
     return (
         <div>
-            <PopUpLanguages header={texts_children["popUpHeaderOne"]} text={texts_children["textLanguagesOne"]}
-                active={popUpActiveKids_2} setActive={setpopUpActiveKids_2}></PopUpLanguages>
-            <PopUpLanguages header={texts_children["popUpHeaderTwo"]} text={texts_children["textLanguagesTwo"]}
-                active={popUpActiveKids_3} setActive={setpopUpActiveKids_3}></PopUpLanguages>
+            <PopUpLanguages header={texts_children["popUpHeaderOne"]} text={texts_children["textChildrenOne"]} opened={opened} close={close}></PopUpLanguages>
+            <PopUpLanguages header={texts_children["popUpHeaderTwo"]} text={texts_children["textChildrenTwo"]} opened={opened} close={close}></PopUpLanguages>
+            <PopUpLanguages header={texts_children["popUpHeaderIntensive"]} text={texts_children["intensive"]} opened={opened} close={close}></PopUpLanguages>
 
-            <PopUpLanguages header={texts_children["popUpHeaderTwo"]} text={texts_children["intensive"]}
-                active={popUpActiveIntensive} setActive={setpopUpActiveIntensive}></PopUpLanguages>
+
 
             <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
@@ -60,6 +62,8 @@ const Children = () => {
             <div>
                 <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3} title_1={course_menu["courseMenuTitle1"]} title_2={course_menu["courseMenuTitle2"]} title_3={course_menu["courseMenuTitle3"]} text_1={course_menu["courseMenuText1"]} text_2={course_menu["courseMenuText2"]} text_3={course_menu["courseMenuText3"]}></CourseMenu>
             </div>
+            {/* <PopUpLanguages header={texts_children["popUpHeaderIntensive"]} text={texts_children["intensive"]}
+                opened={opened} close={close}></PopUpLanguages> */}
             <div>
                 <Intensive localButton={button_4}></Intensive>
             </div>
