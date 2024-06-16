@@ -1,0 +1,5 @@
+.main-form {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}

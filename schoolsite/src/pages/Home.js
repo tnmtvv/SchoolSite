@@ -1,26 +1,43 @@
 import React from "react";
-import { useState } from "react";
-import { Image } from '@mantine/core';
-import PriceTable from "../components/PriceTable/PriceTable"
+import { useRef } from "react";
+// import { Image } from '@mantine/core';
+// import PriceTable from "../components/PriceTable/PriceTable"
+import WelcomeBlock from "../components/WelcomeBlock/WelcomeBlock";
+import MainBlock from "../components/MainBlock/MainBlock";
+import AboutCompanyBlock from "../components/AboutCompanyBlock/AboutCompanyBlock";
+// import MainCarousel from "../components/MainCarousel/MainCarousel";
+import StudentReviews from "../components/StudentReviews/StudentReviews";
+import FormForMainPage from "../components/FormForMainPage/FormForMainPage";
+import Resources from "../components/Resources/Resources";
+import CourseGrid from "../components/CoursesGrid/CoursesGrid";
+import LeadGrid from "../components/MainPhotoGrid/MainPhotoGrid"
+import texts from "../texts/Home.json";
+import "../css/Home.css"
 
 const Home = () => {
-    const prices = [
-        { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
-        { id: 2, age: 7, duration: '45-60 м', num: 'N', price: 'Nitrogen' },
-        { id: 3, age: 39, duration: '45-60 м', num: 'Y', price: 'Yttrium' },
-        { id: 4, age: 56, duration: '45-60 м', num: 'Ba', price: 'Barium' },
-        { id: 5, age: 58, duration: '45-60 м', num: 'Ce', price: 'Cerium' },
-    ];
+    const toForm = useRef(null)
+    const toAbout = useRef(null)
+
+    const all_texts = texts.texts[0]
+    const texts_about = all_texts["about_Company"][0]
 
     return (
-        <div style={{ display: "flex", justifyContent: "center" }}>
-
-            {/* <Image
-                radius="md"
-                src="https://images.unsplash.com/photo-1688920556232-321bd176d0b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80"
-            /> */}
-            <PriceTable data={prices}></PriceTable>
-
+        <div>
+            <MainBlock toForm={toForm} toAbout={toAbout} />
+            <WelcomeBlock />
+            <div ref={toAbout}>
+                <AboutCompanyBlock title={texts_about["title"]} text_p1={texts_about["text_p1"]} text_p2={texts_about["text_p2"]} />
+            </div>
+            {/* <MainCarousel /> */}
+            <div className="leadgrid">
+                <LeadGrid />
+            </div>
+            <CourseGrid />
+            <Resources />
+            <StudentReviews />
+            <div ref={toForm}>
+                <FormForMainPage ref={toForm} />
+            </div>
         </div>
     )
 }

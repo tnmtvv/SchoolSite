@@ -4,11 +4,21 @@ import { Title, Grid, Divider, Text, rem, Image } from "@mantine/core"
 import { Container, SimpleGrid, Skeleton } from '@mantine/core';
 import Cover from "../components/Cover/Cover.js"
 import "../css/ConversationClub.css"
-import kv from "../images/Kvadrat.jpg"
+import texts from "../texts/SpeakingClub.json";
+
+import conv_1 from "../images/new_ones/conv_1.jpg"
+import conv_2 from "../images/new_ones/conv.JPEG"
+import conv_3 from "../images/new_ones/conv_3.JPG"
+import conv_4 from "../images/new_ones/conv_4.JPEG"
+
+
 
 const ConversationClub = () => {
-    const title = <Title color="white">Разговорные<br />клубы</Title>
-    const PRIMARY_COL_HEIGHT = rem(300);
+    // const title = <Title color="white">Разговорные<br />клубы</Title>
+    const texts_speaking = texts.texts[0]
+    const title = texts_speaking["title"]
+
+    const PRIMARY_COL_HEIGHT = rem(200);
     const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
 
     return (
@@ -16,11 +26,14 @@ const ConversationClub = () => {
             <Cover title={title} img={img} />
 
             <div className="about-conversation-club">
-                <div className="description">
-                            <Title className="title" size={50}>Что такое разговорный клуб?</Title>
-                            <Divider />
-                            <Text size={25}className="text">Разговорный клуб - это беседа на интересные и актуальные темы, благодаря которым вы избавитесь от языкового барьера, сможете свободно говорить и понимать иностранцев на слух. Количество участников - от 4 до 12 человек</Text>
-                       
+                <div className="description-sp">
+                    <div data-aos="fade-up" data-aos-duration="800">
+                        <Title className="title" size={50}>Что такое разговорный клуб?</Title>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><Divider /></div>
+                    <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <Text size={25} className="text-seaking-club">{texts_speaking["text-seaking-club"]}</Text>
+                    </div>
                 </div>
                 <Container my="md">
                     <Grid cols={{ base: 1, sm: 2 }} spacing="lg">
@@ -30,28 +43,28 @@ const ConversationClub = () => {
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
+                                    src={conv_1}
                                 />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
-                                    />
+                                    src={conv_2}
+                                />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
-                                    />
+                                    src={conv_3}
+                                />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}/>
+                                    src={conv_4} />
                             </Grid.Col>
                         </Grid>
                     </Grid>
@@ -62,13 +75,16 @@ const ConversationClub = () => {
 
             <div className="info">
                 <div className="text-info">
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <Title size={50}>Расписание и стоимость</Title>
+                    </div>
 
-                <Title size={50}>Расписание и стоимость</Title>
-                <Text size={25} className="cost"> 
-                1 занятие - 1200 руб<br/>
-                Абонемент на 4 занятия - 4000 руб<br/>
-                Длительность абонемента - 2 месяца
-                </Text>
+                    <Text size={25} className="cost">
+                        1 занятие - 1200 руб<br />
+                        Абонемент на 4 занятия - 4000 руб<br />
+                        Длительность абонемента - 2 месяца
+                    </Text>
+
                 </div>
 
             </div>

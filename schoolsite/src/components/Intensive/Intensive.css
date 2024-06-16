@@ -1,0 +1,117 @@
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 613px;
+    background-color: rgba(236, 233, 233, 1);
+}
+
+.img {
+    width: 40%;
+    height: 40%;
+}
+
+.text-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all-content {
+    margin-top: 106px;
+    margin-bottom: 106px;
+    margin-left: 106px;
+    margin-right: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-block {
+    width: 40%;
+    /* height: 100%; */
+    flex-direction: row;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+.main-text {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 120%;
+    color: rgb(87, 87, 87);
+}
+
+.simple-button {
+    background: rgb(211, 28, 28);
+    color: white;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.simple-button:hover {
+    background: rgb(126, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+.simple-button:not(:hover) {
+    background: rgb(211, 28, 28);
+    transition-duration: 0.5s;
+    color: white;
+}
+
+@media screen and (max-width:1105px) {
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        background-color: rgba(236, 233, 233, 1);
+    }
+
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 120%;
+        color: rgb(87, 87, 87);
+        margin-bottom: 10%;
+    }
+
+    .text-image {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: ; */
+    }
+
+    .text-block {
+        width: 100%;
+        /* height: 100%; */
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .block-simple-button {
+        display: flex;
+        justify-content: end;
+    }
+
+    .all-content {
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+}

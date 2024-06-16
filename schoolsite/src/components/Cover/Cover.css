@@ -1,23 +1,125 @@
-.cover{
+.cover {
     display: flex;
     justify-content: space-around;
 }
+
 .cover-form {
     display: flex;
     justify-content: end;
     padding-top: 200px;
 }
-.title {
+
+/* .cover-title { */
+/* display: flex; */
+/* align-items: end; */
+/* } */
+
+.text-devider {
+    /* padding-top: 5px; */
     display: flex;
-    align-items: end;
-}
-.text{
-    display: flex;
-    
+    justify-content: flex-end;
 }
 
-.text>h1.mantine-Text-root {
+.text {
+    font-size: xxx-large;
+    font-weight: 700;
+    width: 50%;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.text-cover {
+    display: flex;
+    justify-content: start;
+    border-left-width: 0.625rem;
+    border-left-color: #fab005;
+    border-left-style: solid;
+}
+
+.text-devider {
+    padding-left: 15px;
+    font-size: xxx-large;
+    padding-top: 5px;
+}
+
+.cover-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: xxx-large;
+
+}
+
+/* .text-devider>h1.mantine-Text-root {
     padding-left: 15px;
     font-size: 5rem;
     padding-top: 5px;
+} */
+
+@media (max-width:1105px) {
+    .cover {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    /* .text-cover {
+        font-size: xx-large;
+        font-weight: 700;
+        border-bottom-width: 0.625rem;
+        border-bottom-color: #fab005;
+    } */
+
+    .title {
+        padding-left: 15px;
+        margin-top: 4%;
+        text-align: center;
+    }
+
+    .cover-form {
+        display: flex;
+        justify-content: end;
+        width: 69%;
+        margin-top: 10%;
+        margin-bottom: 4%;
+        padding-top: 0px;
+        margin-right: 4%;
+
+    }
+
+    .text {
+        font-size: xx-large;
+        font-weight: 700;
+        width: 50%;
+        color: white;
+        font-family: sans-serif;
+
+    }
+
+    .flex-form {
+        display: flex;
+        justify-content: end;
+
+    }
+
+    .cover-title {
+        margin-left: 3%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: xx-large;
+    }
+
+    .text-cover {
+
+        border-left-width: 0.625rem;
+        border-left-color: #fab005;
+        border-left-style: solid;
+    }
+
+
+
 }

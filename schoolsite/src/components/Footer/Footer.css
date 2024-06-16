@@ -1,0 +1,82 @@
+.footer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adress-map-mobile {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.groups {
+
+    display: inline-block;
+}
+
+.address-desktop {
+    display: inline-block;
+    /* padding-top: 30px; */
+    /* margin-left: 50px; */
+}
+
+.map-desktop {
+    display: inline-block;
+    width: 20%;
+}
+
+.map-reviews {
+    width: 15%;
+    /* margin-left: 5%; */
+}
+
+.map-mobile {
+    width: 45%;
+}
+
+@media screen and (max-width: 1105px) {
+    .groups {
+        display: none;
+    }
+
+    .footer-left {
+        justify-content: space-between;
+    }
+
+    .map-reviews {
+        width: 35%;
+        margin-right: 3%;
+    }
+
+    .map-desktop {
+        display: none;
+    }
+
+    .address-desktop {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1105px) {
+
+    .address-map-mobile {
+        display: none;
+    }
+
+    .address-mobile {
+        display: none;
+    }
+
+    .map-mobile {
+        display: none;
+    }
+
+
+}

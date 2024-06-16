@@ -1,0 +1,22 @@
+.about {
+    background-color: rgb(226, 226, 226);
+    max-width: 100%;
+    padding: 10% 15%;
+    text-align: center;
+}
+
+.about-title {
+    display: inline;
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.about-text {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1105px) {
+    .about-title {
+        display: flex;
+        justify-content: center;
+    }
+}
