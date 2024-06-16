@@ -29,25 +29,29 @@ const CourseMenu = (props) => {
   const text_2 = props.text_2
   const text_3 = props.text_3
 
+  const img_1 = props.img_1
+  const img_2 = props.img_2
+  const img_3 = props.img_3
+
 
   return (
     <div>
       <div className='menu-layout-desktop'>
         <SimpleCard title={title_1} mainText={text_1} button={button_1}
-          image={img} simpleCardStyle={cardStyleDesktop} />
+          image={img_1} simpleCardStyle={cardStyleDesktop} />
         <SimpleCard title={title_2} mainText={text_2} button={button_2}
-          image={img} simpleCardStyle={cardStyleDesktop} />
+          image={img_2} simpleCardStyle={cardStyleDesktop} />
         <SimpleCard title={title_3} mainText={text_3} button={button_3}
-          image={img} simpleCardStyle={cardStyleDesktop} />
+          image={img_3} simpleCardStyle={cardStyleDesktop} />
       </div>
 
       <div className='menu-layout-mobile'>
         <SimpleCard title={title_1} mainText={text_1} button={button_1}
-          image={img} simpleCardStyle={cardStyleMobile} />
+          image={img_1} simpleCardStyle={cardStyleMobile} />
         <SimpleCard title={title_2} mainText={text_2} button={button_2}
-          image={img} simpleCardStyle={cardStyleMobile} />
+          image={img_2} simpleCardStyle={cardStyleMobile} />
         <SimpleCard title={title_3} mainText={text_3} button={button_3}
-          image={img} simpleCardStyle={cardStyleMobile} />
+          image={img_3} simpleCardStyle={cardStyleMobile} />
       </div>
 
     </div>

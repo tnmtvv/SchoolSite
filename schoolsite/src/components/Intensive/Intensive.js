@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, Button, Group, Text } from '@mantine/core';
 import './Intensive.css'
-import img from '../../images/camp.jpg'
+import img from '../../images/new_ones/camp.JPG'
 
 
 const Intensive = (props) => {

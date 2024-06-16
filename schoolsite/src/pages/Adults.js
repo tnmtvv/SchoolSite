@@ -10,10 +10,15 @@ import "../components/SimpleCard/SimpleCard.css";
 import { useRef } from "react";
 import texts from "../texts/Adults.json";
 
+import img_1 from "../images/new_ones/adults_1.jpg"
+import img_2 from '../images/new_ones/adults_2.JPEG'
+import img_3 from '../images/new_ones/adults_3.jpg'
+
 const Adults = () => {
     const texts_adults = texts.texts[0]
     const course_menu = texts_adults["course_menu"][0]
-    const [opened, { open, close }] = useDisclosure(false);
+    const [opened_1, { open, close }] = useDisclosure(false);
+    const [opened_2, handlers] = useDisclosure(false);
 
     const prices = [
         { id: 1, age: 3, duration: '45-60 м', num: 'C', price: 'Carbon' },
@@ -38,18 +43,18 @@ const Adults = () => {
 
     const button_1 = <Button className='menu-button' variant="filled" onClick={() => scrollToSection(toCoverForm)}>{texts_adults["button_1"]}</Button>
     const button_2 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_adults["button_2"]}</Button>
-    const button_3 = <Button className='menu-button' variant="filled" fullWidth onClick={open}>{texts_adults["button_3"]}</Button>
+    const button_3 = <Button className='menu-button' variant="filled" fullWidth onClick={handlers.open}>{texts_adults["button_3"]}</Button>
 
 
     return (
         <div>
-            <PopUpLanguages header={texts_adults["popUpHeaderOne"]} text={texts_adults["textAdultsOne"]} opened={opened} close={close}></PopUpLanguages>
-            <PopUpLanguages header={texts_adults["popUpHeaderTwo"]} text={texts_adults["textAdultsTwo"]} opened={opened} close={close}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderOne"]} text={texts_adults["textAdultsOne"]} opened={opened_1} close={close}></PopUpLanguages>
+            <PopUpLanguages header={texts_adults["popUpHeaderTwo"]} text={texts_adults["textAdultsTwo"]} opened={opened_2} close={handlers.close}></PopUpLanguages>
             <div ref={toCoverForm}>
                 <Cover title={title} img={img} />
             </div>
             <div>
-                <CourseMenu button_1={button_1} button_2={button_2} button_3={button_3} title_1={course_menu["courseMenuTitle1"]} title_2={course_menu["courseMenuTitle2"]} title_3={course_menu["courseMenuTitle3"]} text_1={course_menu["courseMenuText1"]} text_2={course_menu["courseMenuText2"]} text_3={course_menu["courseMenuText3"]}></CourseMenu>
+                <CourseMenu img_1={img_1} img_2={img_2} img_3={img_3} button_1={button_1} button_2={button_2} button_3={button_3} title_1={course_menu["courseMenuTitle1"]} title_2={course_menu["courseMenuTitle2"]} title_3={course_menu["courseMenuTitle3"]} text_1={course_menu["courseMenuText1"]} text_2={course_menu["courseMenuText2"]} text_3={course_menu["courseMenuText3"]}></CourseMenu>
             </div>
 
             <div className="header_adv">

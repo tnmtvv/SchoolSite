@@ -2,7 +2,7 @@ import React from "react";
 import ExamAdvantage from "../components/ExamsAdvantages/ExamsAdvantages";
 import PriceTable from "../components/PriceTable/PriceTable";
 import img from '../images/check-mark-svgrepo-com.svg'
-import img2 from '../images/preparation.png'
+import img2 from "../images/new_ones/preparation_mirror.jpg"
 import img_table from '../images/CEFR.jpg'
 import Cover from "../components/Cover/Cover";
 import TextWithShade from "../components/TextWithShade/TextWithShade";

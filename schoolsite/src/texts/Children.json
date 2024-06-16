@@ -2,8 +2,8 @@
     "texts": [
         {
             "title": "Английский для детей",
-            "popUpHeaderOne": "Расписание",
-            "popUpHeaderTwo": "Расписание",
+            "popUpHeaderOne": "Расписание 1",
+            "popUpHeaderTwo": "Расписание 2",
             "popUpHeaderIntensive": "Подробнее",
             "textChildrenOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna.",
             "textChildrenTwo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque commodo, lectus vitae ullamcorper tincidunt, metus justo iaculis nisl, ut facilisis tortor ipsum eget justo. Suspendisse imperdiet, nulla et euismod posuere, dui mauris eleifend ligula, sed ullamcorper urna justo a urna.",

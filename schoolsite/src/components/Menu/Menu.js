@@ -50,7 +50,7 @@ const Menu = () => {
               <Tabs.Tab className={classes.mainLink} value="Languages">Языки</Tabs.Tab>
               <Tabs.Tab className={classes.mainLink} value="ConversationClub">Разговорный клуб</Tabs.Tab>
               <Tabs.Tab className={classes.mainLink} value="Exams">Экзамены</Tabs.Tab>
-              <Tabs.Tab className={classes.mainLink} value="Teachers">Педагоги</Tabs.Tab>
+              {/* <Tabs.Tab className={classes.mainLink} value="Teachers">Педагоги</Tabs.Tab> */}
             </Tabs.List>
           </Tabs>
         </Container>
@@ -68,7 +68,7 @@ const Menu = () => {
             href="https://vk.com/mysmart_school"
             target="_blank"
             rel="noopener noreferrer">
-            <FaVk className="link-icon"  />
+            <FaVk className="link-icon" />
           </a>
           <a
             className="link"

@@ -4,7 +4,7 @@ import { Button } from '@mantine/core';
 import CardForLanguages from "../components/CardForLanguages/CardForLanguages";
 import PopUpLanguages from "../components/PopUpLanguages/PopUpLanguages";
 import "../components/SimpleCard/SimpleCard.css";
-import coverimg from "../images/languages.jpeg"
+import covering from '../images/new_ones/two_kids.jpg'
 import Cover from "../components/Cover/Cover";
 import texts from "../texts/Languages.json";
 
@@ -13,7 +13,8 @@ const Languages = () => {
     const title = texts_lang["title"]
 
     /*После того как починим нерабочую первую кнопку, проверить открывается ли нужное модальное окно*/
-    const [opened, { open, close }] = useDisclosure(false);
+    const [opened_1, { open, close }] = useDisclosure(false);
+    const [opened_2, handlers] = useDisclosure(false);
 
     const button_1 = <Button
         className='menu-button'
@@ -26,7 +27,7 @@ const Languages = () => {
 
     const button_2 = <Button
         className='menu-button'
-        onClick={open}
+        onClick={handlers.open}
         variant="filled"
         fullWidth
     >
@@ -36,7 +37,7 @@ const Languages = () => {
     return (
         <div>
             <div>
-                <Cover title={title} img={coverimg} />
+                <Cover title={title} img={covering} />
             </div>
             <CardForLanguages
                 button_1={button_1}
@@ -46,14 +47,14 @@ const Languages = () => {
             <PopUpLanguages
                 header={texts_lang["LanguageOne"]}
                 text={texts_lang["textLanguagesOne"]}
-                opened={opened}
+                opened={opened_1}
                 close={close}
             />
             <PopUpLanguages
                 header={texts_lang["LanguageTwo"]}
                 text={texts_lang["textLanguagesTwo"]}
-                opened={opened}
-                close={close}
+                opened={opened_2}
+                close={handlers.close}
             />
         </div>
     )

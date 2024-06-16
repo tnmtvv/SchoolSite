@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes } from "react-router";
 import { Navigate } from 'react-router-dom';
+import { useFavicon } from '@mantine/hooks';
 import Menu from "./components/Menu/Menu";
 import Home from './pages/Home';
 import Adults from "./pages/Adults";
@@ -44,28 +45,33 @@ function App() {
     });
   }, [])
 
+  const [favicon, setFavicon] = useState('https://i.imgur.com/4AcBxDh.png');
+  // const setTwitterFavicon = () => setFavicon('https://i.imgur.com/4AcBxDh.png');
+  // const setMantineFavicon = () => setFavicon('https://i.imgur.com/4AcBxDh.png');
+  useFavicon(favicon);
+
   return (
-      <div className="App">
-        <div data-aos="fade-down" data-aos-duration="800">
-          <Router>
+    <div className="App">
+      <div data-aos="fade-down" data-aos-duration="800">
+        <Router>
 
-            <Menu />
+          <Menu />
 
-            <Routes>
-              <Route path="/" element={<Navigate to="/Home" />} />
-              <Route path="/Home" exact element={<Home />} />
-              <Route path="/Children" element={<ChildrenPage />} />
-              <Route path="/Adults" element={<Adults />} />
-              <Route path="/ConversationClub" element={<ConversationClub />} />
-              <Route path="/Languages" element={<Languages />} />
-              <Route path="/Exams" element={<Exams />} />
-              <Route path="/Teachers" element={<Teachers />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Navigate to="/Home" />} />
+            <Route path="/Home" exact element={<Home />} />
+            <Route path="/Children" element={<ChildrenPage />} />
+            <Route path="/Adults" element={<Adults />} />
+            <Route path="/ConversationClub" element={<ConversationClub />} />
+            <Route path="/Languages" element={<Languages />} />
+            <Route path="/Exams" element={<Exams />} />
+            {/* <Route path="/Teachers" element={<Teachers />} /> */}
+          </Routes>
 
-          </Router>
-        </div>
-        <FooterLinks />
+        </Router>
       </div>
+      <FooterLinks />
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Box, BackgroundImage } from "@mantine/core";
-import img from '../../images/welcome.jpg';
+import img from '../../images/new_ones/many_people.JPG';
 import './WelcomeBlock.css';
 
 const WelcomeBlock = () => {

@@ -4,8 +4,14 @@ import { Title, Grid, Divider, Text, rem, Image } from "@mantine/core"
 import { Container, SimpleGrid, Skeleton } from '@mantine/core';
 import Cover from "../components/Cover/Cover.js"
 import "../css/ConversationClub.css"
-import kv from "../images/Kvadrat.jpg"
 import texts from "../texts/SpeakingClub.json";
+
+import conv_1 from "../images/new_ones/conv_1.jpg"
+import conv_2 from "../images/new_ones/conv.JPEG"
+import conv_3 from "../images/new_ones/conv_3.JPG"
+import conv_4 from "../images/new_ones/conv_4.JPEG"
+
+
 
 const ConversationClub = () => {
     // const title = <Title color="white">Разговорные<br />клубы</Title>
@@ -37,28 +43,28 @@ const ConversationClub = () => {
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
+                                    src={conv_1}
                                 />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
+                                    src={conv_2}
                                 />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv}
+                                    src={conv_3}
                                 />
                             </Grid.Col>
                             <Grid.Col span={6}>
                                 <Image
                                     h={SECONDARY_COL_HEIGHT}
                                     w={SECONDARY_COL_HEIGHT}
-                                    src={kv} />
+                                    src={conv_4} />
                             </Grid.Col>
                         </Grid>
                     </Grid>
